@@ -6,6 +6,7 @@ export default function Header() {
   return (
     <div className="header">
       {/* Amazon name */}
+      {/* logo */}
       <img
         className="header__logo"
         src="http://pngimg.com/uploads/amazon/amazon_PNG11.png"
@@ -14,7 +15,6 @@ export default function Header() {
       <div className="header__searchInput" type="text">
         <SearchIcon className="header__searchIcon" />
       </div>
-      {/* logo */}
 
       {/* Navbar */}
       <div className="header__nav">
@@ -26,7 +26,7 @@ export default function Header() {
           <span className="header__optionLineOne">Returns</span>
           <span className="header__optionLineTwo">& Orders</span>
         </div>
-        <div className="header_option">
+        <div className="header__option">
           <span className="header__optionLineOne">Your</span>
           <span className="header__optionLineTwo">Prime</span>
         </div>
