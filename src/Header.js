@@ -1,16 +1,19 @@
 import React from "react";
 import "./Header.css";
+import SearchIcon from "@material-ui/icons/Search";
 
 export default function Header() {
   return (
     <div className="header">
       {/* Amazon name */}
       <img
-        className="header-logo"
+        className="header__logo"
         src="http://pngimg.com/uploads/amazon/amazon_PNG11.png"
       />
       {/* search bar */}
-      <div className="header__searchInput" type="text"></div>
+      <div className="header__searchInput" type="text">
+        <SearchIcon className="header__searchIcon" />
+      </div>
       {/* logo */}
 
       {/* Navbar */}
