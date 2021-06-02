@@ -12,7 +12,8 @@ export default function Header() {
         src="http://pngimg.com/uploads/amazon/amazon_PNG11.png"
       />
       {/* search bar */}
-      <div className="header__searchInput" type="text">
+      <div className="header__search">
+        <input className="header__searchInput" type="text" />
         <SearchIcon className="header__searchIcon" />
       </div>
 
