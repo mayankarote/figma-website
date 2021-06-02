@@ -23,7 +23,7 @@
   height: 12px;
   padding: 10px;
   border: none;
-  width: 90%;
+  width: 100%;
 }
 .header__searchIcon {
   padding: 5px;
@@ -48,4 +48,15 @@
 .header__optionLineTwo {
   font-size: 13px;
   font-weight: 800;
+}
+
+.header__optionBasket {
+  display: flex;
+  align-items: center;
+  color: white;
+}
+
+.header__BasketCount {
+  margin-left: 10px;
+  margin-right: 10px;
 }

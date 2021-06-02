@@ -35,6 +35,7 @@ export default function Header() {
       </div>
       <div className="header__optionBasket">
         <ShoppingBasketIcon />
+        <span className="header__optionLineTwo header__BasketCount">0</span>
       </div>
     </div>
   );
