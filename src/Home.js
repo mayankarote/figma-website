@@ -12,16 +12,23 @@ function Home() {
           alt=""
         />
         <div className="home__row">
-          <Product />
+          <Product
+            title="The Lean Startup"
+            price={24.99}
+            image={`https://images-na.ssl-images-amazon.com/images/I/51Zymoq7UnL._AC_SY400_.jpg`}
+            rating={3}
+          />
           <Product />
         </div>
 
         <div className="home__row">
-          {/* product */}
-          {/* product */}
-          {/* product */}
+          <Product />
+          <Product />
+          <Product />
         </div>
-        <div className="home__row">{/* product */}</div>
+        <div className="home__row">
+          <Product />
+        </div>
       </div>
     </div>
   );
