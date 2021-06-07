@@ -1,6 +1,8 @@
 import React from "react";
 import "./Home.css";
 import Product from "./Product";
+import KMix from "./KMix-mixer.jpg";
+import AmazonEcho from "./Amazon-Echo.jpg";
 
 function Home() {
   return (
@@ -24,7 +26,7 @@ function Home() {
             title="Kenwood kMix Stand Mixer for Baking, Stylish kitchen Mixer with K-beater, Dough Hook and Whisk, 5 Litre Glass Bowl"
             price={239.0}
             rating={4}
-            image={`https://images-na.ssl-images-amazon.com/images/I/810%2BGNdkzKL._AC_SX450_.jpg`}
+            image={KMix}
           />
         </div>
 
@@ -41,7 +43,7 @@ function Home() {
             title="Amazon Echo (3rd Generation) | Smart Speaker with Alexa Charcol  Fabric"
             price={98.99}
             rating={5}
-            image={`https://media.very.co.uk/i/very/P6LTG_SQ1_0000000071_CHARCOL_SLf?$300x400_retinamobilex2$`}
+            image={AmazonEcho}
           />
           <Product
             id="3254354345"
@@ -52,7 +54,13 @@ function Home() {
           />
         </div>
         <div className="home__row">
-          <Product />
+          <Product
+            id="3254354345"
+            title="Samsung LC4983764hJHJ 49' Curved LED Gaming Monitor - Super Ultra Wide Dual WQHD 5120 x "
+            price={598.99}
+            rating={4}
+            image={`https://images-na.ssl-images-amazon.com/images/I/816ctt5WV5L._AC_SX385_.jpg`}
+          />
         </div>
       </div>
     </div>
