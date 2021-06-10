@@ -1,12 +1,14 @@
 import React, { Component } from "react";
 import "./Home.css";
-// import Select from "react-select";
 import axios from "axios";
 import StepApp from "./assests/logo.png";
 import IsolatedSvg from "./assests/Isolated Image Icon.svg";
 import one from "./assests/Group.png";
 import two from "./assests/two.svg";
 import three from "./assests/three.png";
+import colorLine from "./assests/colorLine.png";
+import userPic from "./assests/User-Pic.png";
+import quote from "./assests/quote.png";
 import { Select } from "@chakra-ui/react";
 
 export default class Home extends Component {
@@ -113,61 +115,52 @@ export default class Home extends Component {
                 </p>
               </div>
             </div>
+            <div className="color__line">
+              <img src={colorLine} alt="" />
+            </div>
+            <div className="home__innerCon">
+              <div className="whatstudentssay_OuterText">
+                <p>What Students Say</p>
+              </div>
+              <div className="whatstudentssay_InnerText">
+                <span>
+                  Semaj Africa is an online education platform that delivers
+                  video courses, programs and resources for Individual,
+                  Advertising & Media Specialist,.
+                </span>
+              </div>
+            </div>
+            <div className="home__Grouprow">
+              <div className="cardOne">
+                <div className="rectangle">
+                  <div className="quote">
+                    <img src={quote} alt="" />
+                  </div>
+                  <div className="text__rectangle">
+                    <p>
+                      Without a doubt the biggest impact of using ‘Evidence for
+                      Learning’ is on staff time and organisation of
+                      information. The product’s price in comparison to hours
+                      saved represents great value
+                    </p>
+                  </div>
+                  <div className="mask">
+                    <img src={userPic} alt="" />
+                  </div>
+                  <div className="aurthor__name">
+                    <p>Arthur Broklyn</p>
+                  </div>
+                  <div className="grade">
+                    <p>Grade: 5th</p>
+                  </div>
+                </div>
+              </div>
+              <div className="cardTwo"></div>
+              <div className="cardThree"></div>
+              <div className="cardFour"></div>
+            </div>
           </div>
-          <div className="line__container">
-            <img src="" alt="" />
-          </div>
         </div>
-
-        {/* <div className="home__row">
-          <Product
-            id="12321341"
-            title="The Lean Startup"
-            price={24.99}
-            rating={3}
-            image={`https://images-na.ssl-images-amazon.com/images/I/51Zymoq7UnL._AC_SY400_.jpg`}
-          />
-          <Product
-            id="49538094"
-            title="Kenwood kMix Stand Mixer for Baking, Stylish kitchen Mixer with K-beater, Dough Hook and Whisk, 5 Litre Glass Bowl"
-            price={239.0}
-            rating={4}
-            image={KMix}
-          />
-        </div>
-
-        <div className="home__row">
-          <Product
-            id="4903850"
-            title="Samsung LC49RG90SSUXEN 49' Curved LED Gaming Monitor"
-            price={199.99}
-            rating={3}
-            image={`https://images-na.ssl-images-amazon.com/images/I/71Swqqe7XAL._AC_SX466_.jpg`}
-          />
-          <Product
-            id="23445930"
-            title="Amazon Echo (3rd Generation) | Smart Speaker with Alexa Charcol  Fabric"
-            price={98.99}
-            rating={5}
-            image={AmazonEcho}
-          />
-          <Product
-            id="3254354345"
-            title="New Apple iPad Pro {12.9-inch, wi-fi, 128GB} - Silver {4th Generation}"
-            price={598.99}
-            rating={4}
-            image={`https://images-na.ssl-images-amazon.com/images/I/816ctt5WV5L._AC_SX385_.jpg`}
-          />
-        </div>
-        <div className="home__row">
-          <Product
-            id="3254354345"
-            title="Samsung LC4983764hJHJ 49' Curved LED Gaming Monitor - Super Ultra Wide Dual WQHD 5120 x "
-            price={598.99}
-            rating={4}
-            image={`https://images-na.ssl-images-amazon.com/images/I/816ctt5WV5L._AC_SX385_.jpg`}
-          />
-        </div> */}
       </div>
     );
   }
