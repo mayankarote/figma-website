@@ -1,19 +1,125 @@
-import React from "react";
+import React, { Component } from "react";
 import "./Home.css";
-import Product from "./Product";
-import KMix from "./KMix-mixer.jpg";
-import AmazonEcho from "./Amazon-Echo.jpg";
+// import Select from "react-select";
+import axios from "axios";
+import StepApp from "./assests/logo.png";
+import IsolatedSvg from "./assests/Isolated Image Icon.svg";
+import one from "./assests/Group.png";
+import two from "./assests/two.svg";
+import three from "./assests/three.png";
+import { Select } from "@chakra-ui/react";
 
-function Home() {
-  return (
-    <div className="Home">
-      <div className="home__container">
-        <img
-          className="home__image"
-          src="https://images-eu.ssl-images-amazon.com/images/G/02/digital/video/merch2016/Hero/Covid19/Generic/GWBleedingHero_ENG_COVIDUPDATE__XSite_1500x600_PV_en-GB._CB428684229_.jpg"
-          alt=""
-        />
-        <div className="home__row">
+export default class Home extends Component {
+  constructor(props) {
+    super(props);
+    this.state = {
+      selectOptions: [],
+    };
+  }
+  async getOptions() {
+    const res = await axios.get("https://reqres.in/api/users?page=2");
+    const data = res.data.data;
+    const options = data.map((d) => ({
+      value: d.id,
+      label: d.first_name,
+    }));
+    this.setState({ selectOptions: options });
+    console.log(res);
+  }
+
+  handleChange(e) {
+    this.setState({ id: e.value, first_name: e.label });
+  }
+  componentDidMount() {
+    this.getOptions();
+  }
+
+  render() {
+    return (
+      <div className="Home">
+        <div className="home__container">
+          <div className="Homeinner__container">
+            <div>
+              <p className="small__msg">
+                Students From Class 5th To 11th, Here is Your Dream
+                <p>Opporyunity!</p>
+              </p>
+              <br></br>
+              <p className="large__msg">
+                Play, Learn & Build Your
+                <p>Own Future</p>
+              </p>
+            </div>
+            <img className="home__svg" src={IsolatedSvg} alt="" />
+          </div>
+
+          <div className="home__container2">
+            <div className="home__form">
+              <img className="home__stepApplogo" src={StepApp} alt="" />
+              <div>
+                <div className="home__text">
+                  <label>Select School</label>
+                </div>
+                <div className="home__con">
+                  <Select
+                    size="lg"
+                    backgroundColor="white"
+                    width="460px"
+                    marginLeft="-95px"
+                    borderRadius="50px"
+                    classNamePrefix="home__dropdown"
+                  >
+                    {this.state.selectOptions.map((item) => (
+                      <option value={item.value}>{item.label}</option>
+                    ))}
+                  </Select>
+                  <div>
+                    <button className="home__formbtn">Fetch Data</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div className="home__container3">
+            <div className="home__features">
+              <div className="vector__one">
+                <div className="yellow__circle">
+                  <img src={one} className="icon " alt="" />
+                </div>
+                <p className="outer__text">Adaptive Learning</p>
+                <p className="inner__text">
+                  Learning is made fun and easy for kids through STEPapp’s
+                  engaging gamified platform.
+                </p>
+              </div>
+              <div className="vector__two">
+                <div className="yellow__circle">
+                  <img src={two} className="icon " alt="" />
+                </div>
+                <p className="outer__text">Mapped to school Curriculum</p>
+                <p className="inner__text">
+                  STEPapp Concepts is mapped to the curriculum of school boards
+                  (CBSE, ICSE).
+                </p>
+              </div>
+              <div className="vector__three">
+                <div className="yellow__circle">
+                  <img src={three} className="icon " alt="" />
+                </div>
+                <p className="outer__text">Rewards & Scholarships</p>
+                <p className="inner__text">
+                  STEPapp Scholarships will award 10,000 students of EACH grade
+                  (5th - 11th)
+                </p>
+              </div>
+            </div>
+          </div>
+          <div className="line__container">
+            <img src="" alt="" />
+          </div>
+        </div>
+
+        {/* <div className="home__row">
           <Product
             id="12321341"
             title="The Lean Startup"
@@ -61,10 +167,8 @@ function Home() {
             rating={4}
             image={`https://images-na.ssl-images-amazon.com/images/I/816ctt5WV5L._AC_SX385_.jpg`}
           />
-        </div>
+        </div> */}
       </div>
-    </div>
-  );
+    );
+  }
 }
-
-export default Home;
