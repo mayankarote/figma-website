@@ -8,6 +8,10 @@ import two from "./assests/two.svg";
 import three from "./assests/three.png";
 import colorLine from "./assests/colorLine.png";
 import userPic from "./assests/User-Pic.png";
+import a from "./assests/a.png";
+import b from "./assests/b.png";
+import c from "./assests/c.png";
+import d from "./assests/d.png";
 import quote from "./assests/quote.png";
 import { Select } from "@chakra-ui/react";
 
@@ -16,17 +20,23 @@ export default class Home extends Component {
     super(props);
     this.state = {
       selectOptions: [],
+      error: false,
     };
   }
   async getOptions() {
-    const res = await axios.get("https://reqres.in/api/users?page=2");
+    const res = await axios.get("");
     const data = res.data.data;
-    const options = data.map((d) => ({
-      value: d.id,
-      label: d.first_name,
-    }));
-    this.setState({ selectOptions: options });
-    console.log(res);
+    if (data) {
+      const options = data.map((d) => ({
+        value: d.id,
+        label: d.first_name,
+      }));
+      this.setState({ selectOptions: options });
+      console.log(res);
+    } else {
+      this.setState({ error: true });
+      console.log("ghdjg" + error);
+    }
   }
 
   handleChange(e) {
@@ -40,6 +50,7 @@ export default class Home extends Component {
     return (
       <div className="Home">
         <div className="home__container">
+          {/* home inner container */}
           <div className="Homeinner__container">
             <div>
               <p className="small__msg">
@@ -54,7 +65,8 @@ export default class Home extends Component {
             </div>
             <img className="home__svg" src={IsolatedSvg} alt="" />
           </div>
-
+          {/* home inner container end */}
+          {/* home container 2 */}
           <div className="home__container2">
             <div className="home__form">
               <img className="home__stepApplogo" src={StepApp} alt="" />
@@ -71,17 +83,23 @@ export default class Home extends Component {
                     borderRadius="50px"
                     classNamePrefix="home__dropdown"
                   >
+                    <option value="Select Name">Select Name</option>
                     {this.state.selectOptions.map((item) => (
                       <option value={item.value}>{item.label}</option>
                     ))}
                   </Select>
                   <div>
                     <button className="home__formbtn">Fetch Data</button>
+                    <p className="error">
+                      Error is{this.state.error ? error() : null}
+                    </p>
                   </div>
                 </div>
               </div>
             </div>
           </div>
+          {/* home container 2 end */}
+          {/* home container 3 */}
           <div className="home__container3">
             <div className="home__features">
               <div className="vector__one">
@@ -118,50 +136,137 @@ export default class Home extends Component {
             <div className="color__line">
               <img src={colorLine} alt="" />
             </div>
-            <div className="home__innerCon">
-              <div className="whatstudentssay_OuterText">
-                <p>What Students Say</p>
-              </div>
-              <div className="whatstudentssay_InnerText">
-                <span>
-                  Semaj Africa is an online education platform that delivers
-                  video courses, programs and resources for Individual,
-                  Advertising & Media Specialist,.
-                </span>
+            {/* <div className="home__innerCon"> */}
+            <div className="whatstudentssay_OuterText">
+              <p>What Students Say</p>
+            </div>
+            <div className="whatstudentssay_InnerText">
+              <span>
+                Semaj Africa is an online education platform that delivers video
+                courses, programs and resources for Individual, Advertising &
+                Media Specialist,.
+              </span>
+            </div>
+            <div className="cardOne">
+              <div className="rectangle">
+                <img src={quote} alt="" className="quote" />
+                <p className="text__rectangle">
+                  Without a doubt the biggest impact of using ‘Evidence for
+                  Learning’ is on staff time and organisation of information.
+                  The product’s price in comparison to hours saved represents
+                  great value
+                </p>
+                <div className="mask">
+                  <img src={userPic} alt="" />
+                </div>
+
+                <p className="aurthor__name">Arthur Broklyn</p>
+                <p className="grade">Grade: 5th</p>
               </div>
             </div>
-            <div className="home__Grouprow">
-              <div className="cardOne">
-                <div className="rectangle">
-                  <div className="quote">
-                    <img src={quote} alt="" />
-                  </div>
-                  <div className="text__rectangle">
-                    <p>
-                      Without a doubt the biggest impact of using ‘Evidence for
-                      Learning’ is on staff time and organisation of
-                      information. The product’s price in comparison to hours
-                      saved represents great value
-                    </p>
-                  </div>
-                  <div className="mask">
-                    <img src={userPic} alt="" />
-                  </div>
-                  <div className="aurthor__name">
-                    <p>Arthur Broklyn</p>
-                  </div>
-                  <div className="grade">
-                    <p>Grade: 5th</p>
-                  </div>
+            <div className="cardTwo">
+              <div className="cardTwo_rectangle">
+                <img src={quote} alt="" className="quote" />
+                <p className="text__rectangle">
+                  Without a doubt the biggest impact of using ‘Evidence for
+                  Learning’ is on staff time and organisation of information.
+                  The product’s price in comparison to hours saved represents
+                  great value
+                </p>
+                <div className="mask">
+                  <img src={userPic} alt="" />
                 </div>
+                <p className="aurthor__name">Arthur Broklyn</p>
+                <p className="grade">Grade: 5th</p>
               </div>
-              <div className="cardTwo"></div>
-              <div className="cardThree"></div>
-              <div className="cardFour"></div>
+            </div>
+            <div className="cardThree">
+              <div className="rectangle">
+                <img src={quote} alt="" className="quote" />
+                <p className="text__rectangle">
+                  Without a doubt the biggest impact of using ‘Evidence for
+                  Learning’ is on staff time and organisation of information.
+                  The product’s price in comparison to hours saved represents
+                  great value
+                </p>
+                <div className="mask">
+                  <img src={userPic} alt="" />
+                </div>
+
+                <p className="aurthor__name">Arthur Broklyn</p>
+                <p className="grade">Grade: 5th</p>
+              </div>
+            </div>
+            <div className="cardFour">
+              <div className="rectangle">
+                <img src={quote} alt="" className="quote" />
+                <p className="text__rectangle">
+                  Without a doubt the biggest impact of using ‘Evidence for
+                  Learning’ is on staff time and organisation of information.
+                  The product’s price in comparison to hours saved represents
+                  great value
+                </p>
+                <div className="mask">
+                  <img src={userPic} alt="" />
+                </div>
+
+                <p className="aurthor__name">Arthur Broklyn</p>
+                <p className="grade">Grade: 5th</p>
+              </div>
             </div>
           </div>
+          {/* home container 3 end */}
+          <div className="home__container4">
+            <div className="container4__rectangle">
+              <div className="group__A">
+                <img src={d} alt="" className="a_img" />
+                <img src={c} alt="" className="b_img" />
+                <img src={b} alt="" className="c_img" />
+                <img src={a} alt="" className="d_img" />
+              </div>
+
+              <div className="groupLetter">
+                <div className="groupLetterD">
+                  <p className="groupLetterText">5,679</p>
+                  <p className="groupLetterNum">Registered Students</p>
+                </div>
+                <div className="groupLetterC">
+                  <p className="groupLetterText">2,679</p>
+                  <p className="groupLetterNum">
+                    Student has been helped to achieve their dreams
+                  </p>
+                </div>
+                <div className="groupLetterB">
+                  <p className="groupLetterText">10,000</p>
+                  <p className="groupLetterNum">
+                    More than 10,000 people visits our site monthly
+                  </p>
+                </div>
+                <div className="groupLetterA">
+                  <p className="groupLetterText">$10</p>
+                  <p className="groupLetterNum">
+                    Ranked among the top 10 growing online learning startups in
+                    West Africa
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div className="home__container5">
+            <p className="last__Text">All Right Reserved | STEPAPP 2021</p>
+          </div>
         </div>
+
+        {/* home container end  */}
       </div>
     );
   }
+}
+
+function error() {
+  return (
+    <div className=" error alert alert-danger " role="alert">
+      There is no data
+    </div>
+  );
 }
