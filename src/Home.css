@@ -39,7 +39,7 @@
   font-family: Proxima Nova;
 }
 .error {
-  color: white;
+  color: rgb(160, 79, 79);
   margin: 50;
 }
 .home__svg {
