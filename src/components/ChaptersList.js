@@ -1,27 +1,16 @@
 import React from "react";
+import Chapters from "./Chapters";
+import { detailProduct } from "../data";
 
 function ChaptersList() {
   const [states, setState] = useState([]);
-  const [errors, setError] = useState();
-  useEffect(
-    () => {
-      axios
-        .get(`https://reqres.in/api/users?page=2`)
-        .then((response) => {
-          setState(response.data.data);
-        })
-        .then((err) => setError(err));
-    },
-    [states],
-    [errors]
-  );
+  useEffect(states.getItem[states]);
 
-  const error = () => {
-    return (
-      <div className=" error alert alert-danger " role="alert">
-        Error: There is no data
-      </div>
-    );
+  getItem = (id) => {
+    const product = states.products.find((item) => item.id === id);
+    setState(() => {
+      return { detailProduct: product };
+    });
   };
 
   return (
@@ -30,10 +19,11 @@ function ChaptersList() {
         {/* login container 2 */}
         <div className="subject__container1">
           <div className="chap__container">
-            <div className="chap__title">{title}</div>
-            <div className="chap__info">{info}</div>
-            <div className="chap__info2">{info2}</div>
-            <div className="chap__img">{img}</div>
+            {(value) => {
+              return value.products.map((product) => {
+                return <Product key={product.id} product={product} />;
+              });
+            }}
           </div>
         </div>
         {/* login container 2 end */}

@@ -1,29 +1,19 @@
 import React, { useState, useEffect } from "react";
 import "./Subject.css";
-import { storeProducts, detailProduct } from "./data";
+import { storeProducts } from "./data";
 
 export default function Chapters(props) {
-  const { id, title, img, info, info2 } = this.props.product;
-
+  const { title, img, info, info2 } = props.product;
   const [states, setState] = useState([]);
-  useEffect(
-    (id) => {
-      let products = [];
-      storeProducts.forEach((item) => {
-        const singleItem = { ...item };
-        products = [...products, singleItem];
-      });
-      setState(() => {
-        return { products };
-      }, states.checkCartItems);
 
-      const product = states.products.find((item) => item.id === id);
-      setState(() => {
-        return { detailProduct: product };
-      });
-    },
-    [states]
-  );
+  useEffect(() => {
+    let products = [];
+    storeProducts.forEach((item) => {
+      const singleItem = { ...item };
+      products = [...products, singleItem];
+    });
+    setState(products);
+  }, [states]);
 
   return (
     <div className="subject">
