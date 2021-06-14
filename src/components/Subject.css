@@ -227,3 +227,17 @@
   left: 70%;
   top: 86.05%;
 }
+.chap__container {
+  position: absolute;
+  width: 430px;
+  height: 270px;
+  left: 67px;
+  top: 177px;
+
+  background: #ffffff;
+  opacity: 0.95;
+  /* 3 */
+
+  box-shadow: 0px 12px 35px rgba(160, 121, 0, 0.2);
+  border-radius: 10px;
+}

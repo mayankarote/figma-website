@@ -7,20 +7,20 @@ class ProductProvider extends Component {
     products: [],
     detailProduct: detailProduct,
   };
-  componentDidMount() {
-    this.setProducts();
-  }
+  // componentDidMount() {
+  //   this.setProducts();
+  // }
 
-  setProducts = () => {
-    let products = [];
-    storeProducts.forEach((item) => {
-      const singleItem = { ...item };
-      products = [...products, singleItem];
-    });
-    this.setState(() => {
-      return { products };
-    }, this.checkCartItems);
-  };
+  // setProducts = () => {
+  //   let products = [];
+  //   storeProducts.forEach((item) => {
+  //     const singleItem = { ...item };
+  //     products = [...products, singleItem];
+  //   });
+  //   this.setState(() => {
+  //     return { products };
+  //   }, this.checkCartItems);
+  // };
 
   getItem = (id) => {
     const product = this.state.products.find((item) => item.id === id);

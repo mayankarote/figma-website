@@ -1,37 +1,38 @@
 import React, { useState, useEffect } from "react";
 import "./Subject.css";
-import axios from "axios";
+import { storeProducts, detailProduct } from "./data";
 import { Link } from "react-router-dom";
 
-export default function Chapters() {
-  const [states, setState] = useState([]);
-  const [errors, setError] = useState();
-  useEffect(
-    () => {
-      axios
-        .get(`https://reqres.in/api/users?page=2`)
-        .then((response) => {
-          setState(response.data.data);
-        })
-        .then((err) => setError(err));
-    },
-    [states],
-    [errors]
-  );
+export default function Chapters(props) {
+  const { id, title, img, price, inCart } = this.props.product;
 
-  const error = () => {
-    return (
-      <div className=" error alert alert-danger " role="alert">
-        Error: There is no data
-      </div>
-    );
-  };
+  const [states, setState] = useState([]);
+  useEffect(
+    (id) => {
+      let products = [];
+      storeProducts.forEach((item) => {
+        const singleItem = { ...item };
+        products = [...products, singleItem];
+      });
+      setState(() => {
+        return { products };
+      }, states.checkCartItems);
+
+      const product = states.products.find((item) => item.id === id);
+      setState(() => {
+        return { detailProduct: product };
+      });
+    },
+    [states]
+  );
 
   return (
     <div className="subject">
       <div className="subject__container">
         {/* login container 2 */}
-        <div className="subject__container1"></div>
+        <div className="subject__container1">
+          <div className="chap__container"></div>
+        </div>
         {/* login container 2 end */}
         <div className="login__container2">
           <p>All Right Reserved | STEPAPP 2021</p>
