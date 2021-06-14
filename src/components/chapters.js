@@ -1,8 +1,9 @@
 import React, { useState, useEffect } from "react";
 import "./Subject.css";
+import axios from "axios";
 import { Link } from "react-router-dom";
 
-export default function chapters() {
+export default function Chapters() {
   const [states, setState] = useState([]);
   const [errors, setError] = useState();
   useEffect(

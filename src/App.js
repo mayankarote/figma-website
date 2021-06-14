@@ -5,7 +5,7 @@ import Home from "./Home";
 import Login from "./components/Login";
 import Grade from "./components/Grade";
 import Subject from "./components/Subject";
-import Productlist from "./components/ProductList";
+import Chapters from "./components/Chapters";
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 import { ChakraProvider } from "@chakra-ui/react";
 
@@ -18,9 +18,10 @@ function App() {
           <div className="App">
             <Header />
             <Switch>
-              <Route exact path="/productlist">
-                <Productlist />
+              <Route exact path="/chapters">
+                <Chapters />
               </Route>
+
               <Route path="/subject">
                 <Subject />
               </Route>
