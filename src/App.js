@@ -1,24 +1,42 @@
+import React from "react";
 import "./App.css";
 import Header from "./Header";
 import Home from "./Home";
+import Login from "./components/Login";
+import Grade from "./components/Grade";
+import Subject from "./components/Subject";
+
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 import { ChakraProvider } from "@chakra-ui/react";
 
 function App() {
   return (
     //BEM
-    <ChakraProvider>
-      <Router>
-        <div className="App">
-          <Switch>
-            <Route path="/">
-              <Header />
-              <Home />
-            </Route>
-          </Switch>
-        </div>
-      </Router>
-    </ChakraProvider>
+    <React.Fragment>
+      <ChakraProvider>
+        <Router>
+          <div className="App">
+            <Header />
+            <Switch>
+              <Route path="/subject">
+                <Subject />
+              </Route>
+
+              <Route path="/grade">
+                <Grade />
+              </Route>
+
+              <Route path="/login">
+                <Login />
+              </Route>
+              <Route path="/">
+                <Home />
+              </Route>
+            </Switch>
+          </div>
+        </Router>
+      </ChakraProvider>
+    </React.Fragment>
   );
 }
 

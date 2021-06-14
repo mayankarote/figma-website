@@ -43,23 +43,37 @@
   flex-direction: column;
   margin-left: 10px;
   margin-right: 10px;
-  color: white;
+  color: rgb(14, 4, 4);
 }
-.header__optionLineOne {
-  font-size: 10px;
-}
-.header__optionLineTwo {
-  font-size: 13px;
-  font-weight: 800;
-}
+.header__welcome {
+  position: absolute;
+  width: 170px;
+  height: 22px;
+  left: 1550px;
+  top: 20px;
 
-.header__optionBasket {
-  display: flex;
-  align-items: center;
-  color: white;
-}
+  font-family: Proxima Nova;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 17px;
+  text-align: right;
 
-.header__BasketCount {
-  margin-left: 10px;
-  margin-right: 10px;
+  color: #000000;
+}
+.header__profile {
+  position: absolute;
+  width: 366px;
+  height: 20px;
+  left: 1530px;
+  top: 21px;
+
+  font-family: Proxima Nova;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 17px;
+  text-align: right;
+
+  color: #ff8a00;
 }

@@ -14,31 +14,25 @@ import c from "./assests/c.png";
 import d from "./assests/d.png";
 import quote from "./assests/quote.png";
 import { Select } from "@chakra-ui/react";
+import { Link } from "react-router-dom";
 
 export default function Home() {
   const [states, setState] = useState([]);
-  const [errors, setError] = useState();
-  useEffect(
-    () => {
-      axios
-        .get(`https://reqres.in/api/users?page=2`)
-        .then((response) => {
-          setState(response.data.data);
-        })
-        .then((err) => setError(err));
-    },
-    [states],
-    [errors]
-  );
+  useEffect(() => {
+    axios.get(`https://reqres/api/users?page=2`).then((response) => {
+      setState(response.data.data);
+      console.log(response.data.data);
 
-  const error = () => {
-    return (
-      <div className=" error alert alert-danger " role="alert">
-        Error: There is no data
-      </div>
-    );
-  };
-
+      if (!response.data.data) {
+        alert("true");
+      } else {
+        alert("false");
+      }
+    });
+  }, [states]);
+  // if (states.noData) {
+  //   alert("no dta");
+  // }
   return (
     <div className="Home">
       <div className="home__container">
@@ -81,8 +75,9 @@ export default function Home() {
                   ))}
                 </Select>
                 <div>
-                  <button className="home__formbtn">Fetch Data</button>
-                  <p className="error">{errors ? { error } : null}</p>
+                  <Link to="/login">
+                    <button className="home__formbtn">Proceed</button>
+                  </Link>
                 </div>
               </div>
             </div>
@@ -243,7 +238,7 @@ export default function Home() {
           </div>
         </div>
         <div className="home__container5">
-          <p className="last__Text">All Right Reserved | STEPAPP 2021</p>
+          <p>All Right Reserved | STEPAPP 2021</p>
         </div>
       </div>
 

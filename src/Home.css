@@ -9,6 +9,7 @@
 /* home container 1 */
 .home__container {
   height: 100%;
+  width: 100%;
   left: 20px;
   right: 20px;
 }
@@ -491,8 +492,7 @@
   color: #ffffff;
 }
 .home__container5 {
-  background-color: #0c2657;
-}
-.last__Text {
+  background-color: #0d2249;
+  height: 39px;
   color: white;
 }

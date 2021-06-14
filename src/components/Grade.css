@@ -1,0 +1,118 @@
+.login {
+  display: flex;
+  justify-content: center;
+  margin-left: auto;
+  margin-right: auto;
+  max-height: 1500px;
+  position: sticky;
+}
+/* login container 1 */
+.login__container {
+  height: 100%px;
+  width: 100%;
+  left: 20px;
+  right: 20px;
+}
+
+/* login container 2 */
+.login__container1 {
+  height: 990px;
+  display: flex;
+  align-items: center;
+  background-color: #0c2657;
+  top: 310px;
+  left: 20px;
+}
+
+.login__form {
+  position: absolute;
+  width: 423px;
+  height: 236px;
+  left: 737px;
+  top: 10px;
+}
+.login__stepApplogo {
+  margin-top: 200px;
+  margin-left: 160px;
+  width: 210px;
+  height: 130px;
+}
+/* form container */
+.login__con {
+  margin-top: 30px;
+  margin-left: 150px;
+}
+.login__text {
+  margin-top: 40px;
+  margin-left: 110px;
+  width: 354px;
+  height: 28px;
+
+  font-family: Proxima Nova;
+  font-style: normal;
+  font-size: 20px;
+  line-height: 20px;
+  text-align: center;
+  color: #d8d8d8;
+}
+.login__input {
+  position: relative;
+  margin: 10px;
+  right: 55%;
+  bottom: 74.03%;
+  width: 550px;
+  height: 75px;
+  background: #ffffff;
+  border-radius: 80px;
+  color: black;
+  padding: 25px;
+}
+.login__link {
+  margin-top: 20px;
+  margin-left: 100px;
+  width: 354px;
+  height: 28px;
+
+  font-family: Proxima Nova;
+  font-style: normal;
+  font-size: 18px;
+  line-height: 20px;
+  text-align: center;
+  color: #d8d8d8;
+}
+.login__innerLink {
+  color: goldenrod;
+  text-decoration: underline;
+}
+.login__outerLink {
+  color: #d8d8d8;
+}
+.login__formbtn {
+  position: relative;
+  margin: 15px;
+  right: 55%;
+  margin-top: 50px;
+  border-radius: 80px;
+  padding: 5px;
+  color: black;
+  width: 550px;
+  height: 70px;
+  background: linear-gradient(253.58deg, #ffc000 1.55%, #ff8a00 95.8%);
+  /* 3 */
+
+  box-shadow: 0px 12px 35px rgba(160, 121, 0, 0.2);
+  border-radius: 100px;
+  font-size: 25px;
+}
+.login__container2 {
+  background-color: #0d2249;
+  color: white;
+  height: 39px;
+}
+.subject__modal {
+  position: absolute;
+  width: 834px;
+  height: 414.74px;
+  left: 250px;
+  top: 70px;
+}
