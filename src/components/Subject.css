@@ -1,0 +1,229 @@
+.subject {
+  display: flex;
+  justify-content: center;
+  margin-left: auto;
+  margin-right: auto;
+  max-height: 1500px;
+  position: sticky;
+}
+/* login container 1 */
+.subject__container {
+  height: 100%px;
+  width: 100%;
+  left: 20px;
+  right: 20px;
+}
+
+/* login container 2 */
+.subject__container1 {
+  height: 1050px;
+  display: flex;
+  align-items: center;
+  background-color: #0c2657;
+  top: 310px;
+  left: 20px;
+}
+
+.subject__modal {
+  position: absolute;
+  width: 950px;
+  height: 400.74px;
+  left: 250px;
+  top: 58px;
+}
+
+.grade__group2 {
+  position: absolute;
+  width: 905px;
+  height: 270px;
+  left: 90px;
+  top: 30px;
+}
+
+.grade__box1 {
+  position: absolute;
+  width: 450px;
+  height: 330px;
+  left: 30px;
+  top: 500px;
+
+  background: #ff8a48;
+  opacity: 0.95;
+  /* 3 */
+
+  box-shadow: 0px 12px 35px rgba(160, 121, 0, 0.2);
+  border-radius: 10px;
+}
+.grade__box2 {
+  position: absolute;
+  width: 450px;
+  height: 330px;
+  left: 600px;
+  top: 500px;
+
+  background: #1bb8ae;
+  opacity: 0.95;
+  /* 3 */
+
+  box-shadow: 0px 12px 35px rgba(160, 121, 0, 0.2);
+  border-radius: 10px;
+}
+
+.learn__science {
+  position: absolute;
+  width: 200px;
+  height: 28px;
+  left: 30px;
+  top: 40px;
+
+  font-family: Proxima Nova;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 28px;
+  line-height: 28px;
+  /* identical to box height */
+  text-align: center;
+  color: #ffffff;
+}
+.inner__text {
+  position: absolute;
+  width: 122px;
+  height: 72px;
+  left: 36px;
+  top: 130px;
+
+  font-family: Proxima Nova;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 17px;
+  line-height: 159.7%;
+  text-align: justify;
+  /* or 24px */
+  color: #ffffff;
+}
+.__chapters {
+  position: absolute;
+  width: 155px;
+  height: 28px;
+  left: 36px;
+  top: 260px;
+
+  font-family: Proxima Nova;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 28px;
+  line-height: 28px;
+  /* identical to box height */
+  color: #ffffff;
+}
+.free__demo {
+  position: absolute;
+  width: 130px;
+  height: 46px;
+  left: 300px;
+  top: 276px;
+
+  font-family: Proxima Nova;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 14px;
+  display: flex;
+  align-items: center;
+
+  color: #000000;
+}
+
+.star {
+  position: absolute;
+  left: 70%;
+  top: 86.05%;
+}
+
+.text {
+  position: absolute;
+  width: 86px;
+  height: 36px;
+  left: 340px;
+  top: 275px;
+
+  font-family: Proxima Nova;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 15px;
+  line-height: 14px;
+  display: flex;
+  align-items: center;
+
+  color: #000000;
+}
+.learn__math {
+  position: absolute;
+  width: 200px;
+  height: 28px;
+  left: 30px;
+  top: 40px;
+
+  font-family: Proxima Nova;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 28px;
+  line-height: 28px;
+  text-align: center;
+  color: #ffffff;
+}
+
+.inner__text1 {
+  position: absolute;
+  width: 190px;
+  height: 72px;
+  left: 50px;
+  top: 130px;
+
+  font-family: Proxima Nova;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 17px;
+  line-height: 24px;
+  text-align: justify;
+  color: #ffffff;
+}
+
+.__chapters1 {
+  position: absolute;
+  width: 155px;
+  height: 28px;
+  left: 36px;
+  top: 260px;
+
+  font-family: Proxima Nova;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 28px;
+  line-height: 28px;
+  /* identical to box height */
+  color: #ffffff;
+}
+
+.free__demo1 {
+  position: absolute;
+  width: 130px;
+  height: 46px;
+  left: 300px;
+  top: 276px;
+
+  font-family: Proxima Nova;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 14px;
+  display: flex;
+  align-items: center;
+
+  color: #000000;
+}
+.star1 {
+  position: absolute;
+  left: 70%;
+  top: 86.05%;
+}
