@@ -1,10 +1,9 @@
 import React, { useState, useEffect } from "react";
 import "./Subject.css";
 import { storeProducts, detailProduct } from "./data";
-import { Link } from "react-router-dom";
 
 export default function Chapters(props) {
-  const { id, title, img, price, inCart } = this.props.product;
+  const { id, title, img, info, info2 } = this.props.product;
 
   const [states, setState] = useState([]);
   useEffect(
@@ -31,7 +30,12 @@ export default function Chapters(props) {
       <div className="subject__container">
         {/* login container 2 */}
         <div className="subject__container1">
-          <div className="chap__container"></div>
+          <div className="chap__container">
+            <div className="chap__title">{title}</div>
+            <div className="chap__info">{info}</div>
+            <div className="chap__info2">{info2}</div>
+            <div className="chap__img">{img}</div>
+          </div>
         </div>
         {/* login container 2 end */}
         <div className="login__container2">
