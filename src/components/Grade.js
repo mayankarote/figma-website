@@ -14,28 +14,9 @@ import ten from "../assests/10th.png";
 import eleven from "../assests/11th.png";
 import { Link } from "react-router-dom";
 
-export default function Login() {
-  const [states, setState] = useState([]);
-  const [errors, setError] = useState();
-  useEffect(
-    () => {
-      axios
-        .get(`https://reqres.in/api/users?page=2`)
-        .then((response) => {
-          setState(response.data.data);
-        })
-        .then((err) => setError(err));
-    },
-    [states],
-    [errors]
-  );
-
-  const error = () => {
-    return (
-      <div className=" error alert alert-danger " role="alert">
-        Error: There is no data
-      </div>
-    );
+export default function Grade(props) {
+  const onClick = () => {
+    alert("No data available");
   };
 
   return (
@@ -48,31 +29,37 @@ export default function Login() {
               <img src={bigCircle} alt="" />
               <img src={selectGrade} alt="" className="grade__select" />
             </div>
-            <div className="grade__smallCircle5">
-              <img src={Ellipse5th} alt="" />
-              <p className="grade_five">5th</p>
-            </div>
-            <div className="grade__smallCircle6">
-              <img src={Ellipse6th} alt="" />
-              <p className="grade_six">6th</p>
-            </div>
-            <div className="grade__smallCircle7">
+            <Link to="./subject">
+              <div className="grade__smallCircle5">
+                <img src={Ellipse5th} alt="" />
+                <p className="grade_five">5th</p>
+              </div>
+            </Link>
+
+            <Link to="./subject">
+              <div className="grade__smallCircle6">
+                <img src={Ellipse6th} alt="" />
+                <p className="grade_six">6th</p>
+              </div>
+            </Link>
+
+            <div className="grade__smallCircle7" onClick={onClick}>
               <img src={Ellipse7th} alt="" />
               <p className="grade_seven">7th</p>
             </div>
-            <div className="grade__smallCircle8">
+            <div className="grade__smallCircle8" onClick={onClick}>
               <img src={Ellipse8th} alt="" />
               <p className="grade_eight">8th</p>
             </div>
-            <div className="grade__smallCircle9">
+            <div className="grade__smallCircle9" onClick={onClick}>
               <img src={Ellipse9th} alt="" />
               <p className="grade_nine">9th</p>
             </div>
-            <div className="grade__smallCircle10">
+            <div className="grade__smallCircle10" onClick={onClick}>
               <img src={Ellipse10th} alt="" />
               <img src={ten} alt="" className="grade_ten" />
             </div>
-            <div className="grade__smallCircle11">
+            <div className="grade__smallCircle11" onClick={onClick}>
               <img src={Ellipse11th} alt="" />
               <img src={eleven} alt="" className="grade_eleven" />
             </div>

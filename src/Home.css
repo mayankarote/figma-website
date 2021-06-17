@@ -173,7 +173,7 @@
   top: 15.55%;
   bottom: 50.72%;
 }
-.outer__text {
+.homeouter__text {
   position: absolute;
   width: 380.27px;
   height: 22.67px;
@@ -189,7 +189,7 @@
   text-align: center;
   color: #5c5c5c;
 }
-.inner__text {
+.homeinner__text {
   position: absolute;
   width: 255px;
   height: 44px;

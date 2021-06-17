@@ -228,11 +228,11 @@
   top: 86.05%;
 }
 .chap__container {
-  position: absolute;
+  position: relative;
+  display: grid;
   width: 430px;
-  height: 270px;
-  left: 67px;
-  top: 177px;
+  height: 330px;
+  left: 185px;
 
   background: #ffffff;
   opacity: 3;
@@ -241,39 +241,41 @@
 }
 .chap__title {
   position: absolute;
-  width: 80px;
+  width: 155px;
   height: 34px;
-  left: 83px;
-  top: 202px;
+  left: 25px;
+  top: 30px;
 
   font-family: Proxima Nova;
   font-style: normal;
   font-weight: bold;
-  font-size: 28px;
+  text-align: justify;
+  font-size: 25px;
   line-height: 34px;
   color: #000000;
 }
 .chap__info {
   position: absolute;
-  width: 311px;
+  width: 300px;
   height: 48px;
-  left: 83px;
-  top: 279px;
+  left: 20px;
+  top: 135px;
 
   font-family: Proxima Nova;
   font-style: normal;
   font-weight: normal;
   font-size: 15px;
+  text-align: justify;
   line-height: 159.7%;
   /* or 24px */
   color: #000000;
 }
 .chap__info2 {
   position: absolute;
-  width: 188px;
+  width: 218px;
   height: 18px;
-  left: 83px;
-  top: 337px;
+  left: 15px;
+  top: 210px;
 
   font-family: Proxima Nova;
   font-style: normal;
@@ -287,11 +289,48 @@
   position: absolute;
   width: 119px;
   height: 49px;
-  left: 83px;
-  top: 373px;
+  left: 25px;
+  top: 260px;
 
   background: #ff8f50;
   mix-blend-mode: normal;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
   border-radius: 31px;
+}
+.chap__play {
+  position: absolute;
+  width: 18px;
+  height: 18px;
+  left: 10px;
+  top: 15px;
+}
+.grid-container {
+  display: grid;
+  grid-column-gap: 150px;
+  grid-row-gap: 60px;
+  grid-template-columns: auto auto auto;
+  padding: 10px;
+}
+
+.grid-item {
+  border: 1px solid rgba(0, 0, 0, 0.8);
+  padding: 20px;
+  font-size: 30px;
+  text-align: center;
+}
+.play__unBlock {
+  position: absolute;
+  width: 136px;
+  height: 19px;
+  left: 30px;
+  top: 275px;
+
+  font-family: Proxima Nova;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 19px;
+  line-height: 19px;
+  /* identical to box height */
+
+  color: #140e0e;
 }

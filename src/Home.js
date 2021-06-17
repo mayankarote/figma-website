@@ -14,27 +14,49 @@ import c from "./assests/c.png";
 import d from "./assests/d.png";
 import quote from "./assests/quote.png";
 import { Select } from "@chakra-ui/react";
-import { Link } from "react-router-dom";
+import { Link, useHistory } from "react-router-dom";
+import Header from "./Header";
 
-export default function Home() {
+export default function Home(props) {
+  let history = useHistory();
   const [states, setState] = useState([]);
-  useEffect(() => {
-    axios.get(`https://reqres/api/users?page=2`).then((response) => {
-      setState(response.data.data);
-      console.log(response.data.data);
+  const [statesDropdown, setStatesDropdown] = useState([]);
+  const [error, setError] = useState();
 
-      if (!response.data.data) {
-        alert("true");
-      } else {
-        alert("false");
-      }
+  useEffect(
+    () => {
+      axios
+        .get(`https://reqres.in/api/users?page=2`)
+        .then((response) => {
+          setState(response.data.data);
+        })
+        .catch((error) => {
+          setError(alert("No data available, please try later"));
+        });
+    },
+    [],
+    [error]
+  );
+
+  const fetchDropdownValue = (e) => {
+    setStatesDropdown({ selectValue: e.target.value });
+  };
+
+  const proceed = () => {
+    localStorage.setItem("selectValue", statesDropdown.selectValue);
+
+    history.push({
+      pathname: "/login",
+      selectValue: statesDropdown.selectValue,
     });
-  }, [states]);
-  // if (states.noData) {
-  //   alert("no dta");
-  // }
+
+    const selectValue = localStorage.getItem("selectValue") === "true";
+    setState({ selectValue });
+  };
+
   return (
     <div className="Home">
+      {/* {<Header />} */}
       <div className="home__container">
         {/* home inner container */}
         <div className="Homeinner__container">
@@ -68,6 +90,7 @@ export default function Home() {
                   marginLeft="-95px"
                   borderRadius="50px"
                   classNamePrefix="home__dropdown"
+                  onChange={fetchDropdownValue}
                 >
                   <option value="Select Name">Select Name</option>
                   {states.map((state) => (
@@ -75,9 +98,9 @@ export default function Home() {
                   ))}
                 </Select>
                 <div>
-                  <Link to="/login">
-                    <button className="home__formbtn">Proceed</button>
-                  </Link>
+                  <button onClick={proceed} className="home__formbtn">
+                    Proceed
+                  </button>
                 </div>
               </div>
             </div>
@@ -91,8 +114,8 @@ export default function Home() {
               <div className="yellow__circle">
                 <img src={one} className="icon " alt="" />
               </div>
-              <p className="outer__text">Adaptive Learning</p>
-              <p className="inner__text">
+              <p className="homeouter__text">Adaptive Learning</p>
+              <p className="homeinner__text">
                 Learning is made fun and easy for kids through STEPapp’s
                 engaging gamified platform.
               </p>
@@ -101,8 +124,8 @@ export default function Home() {
               <div className="yellow__circle">
                 <img src={two} className="icon " alt="" />
               </div>
-              <p className="outer__text">Mapped to school Curriculum</p>
-              <p className="inner__text">
+              <p className="homeouter__text">Mapped to school Curriculum</p>
+              <p className="homeinner__text">
                 STEPapp Concepts is mapped to the curriculum of school boards
                 (CBSE, ICSE).
               </p>
@@ -111,8 +134,8 @@ export default function Home() {
               <div className="yellow__circle">
                 <img src={three} className="icon " alt="" />
               </div>
-              <p className="outer__text">Rewards & Scholarships</p>
-              <p className="inner__text">
+              <p className="homeouter__text">Rewards & Scholarships</p>
+              <p className="homeinner__text">
                 STEPapp Scholarships will award 10,000 students of EACH grade
                 (5th - 11th)
               </p>
@@ -241,7 +264,6 @@ export default function Home() {
           <p>All Right Reserved | STEPAPP 2021</p>
         </div>
       </div>
-
       {/* home container end  */}
     </div>
   );

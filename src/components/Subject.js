@@ -7,27 +7,12 @@ import star from "../assests/star.png";
 import freeDemo from "../assests/freeDemo.png";
 
 export default function Subject() {
-  const [states, setState] = useState([]);
-  const [errors, setError] = useState();
-  useEffect(
-    () => {
-      axios
-        .get(`https://reqres.in/api/users?page=2`)
-        .then((response) => {
-          setState(response.data.data);
-        })
-        .then((err) => setError(err));
-    },
-    [states],
-    [errors]
-  );
+  const [show, setShow] = useState(false);
+  const handleClose = () => setShow(false);
+  const handleShow = () => setShow(true);
 
-  const error = () => {
-    return (
-      <div className=" error alert alert-danger " role="alert">
-        Error: There is no data
-      </div>
-    );
+  const onClick = () => {
+    alert("No data available");
   };
 
   return (
@@ -38,16 +23,20 @@ export default function Subject() {
           <div className="grade__group">
             <img src={Modal} alt="" className="subject__modal" />
             <div className="grade__group2">
-              <div className="grade__box1">
-                <p className="learn__science">Learn Science</p>
-                <p className="inner__text">Light Magnetism +6 more Chapters</p>
-                <p className="__chapters">8 Chapters</p>
-                <img src={freeDemo} alt="" className="free__demo" />
-                <img src={star} alt="" className="star" />
-                <p className="text">Free Demo</p>
-              </div>
-              <div className="grade__box2">
-                <p className="learn__math">Learn Science</p>
+              <Link to="./chapters">
+                <div className="grade__box1">
+                  <p className="learn__science">Learn Science</p>
+                  <p className="inner__text">
+                    Light Magnetism +6 more Chapters
+                  </p>
+                  <p className="__chapters">8 Chapters</p>
+                  <img src={freeDemo} alt="" className="free__demo" />
+                  <img src={star} alt="" className="star" />
+                  <p className="text">Free Demo</p>
+                </div>
+              </Link>
+              <div className="grade__box2" onClick={onClick}>
+                <p className="learn__math">Learn Math</p>
                 <p className="inner__text1">
                   Playing with Numbers
                   <p>Number System,</p>
