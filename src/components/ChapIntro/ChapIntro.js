@@ -8,7 +8,7 @@ import { useHistory } from "react-router-dom";
 import HideShowcontent from "./HideShowcontent";
 
 export default function Chapdescription() {
-  const [state, setState] = useState(false);
+  const [state, setState] = useState(true);
 
   let history = useHistory();
   const onClick = () => {
