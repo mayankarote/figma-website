@@ -1,0 +1,498 @@
+.home {
+  display: flex;
+  justify-content: center;
+  margin-left: auto;
+  margin-right: auto;
+  max-height: 1500px;
+  position: relative;
+}
+/* home container 1 */
+.home__container {
+  height: 100%;
+  width: 100%;
+  left: 20px;
+  right: 20px;
+}
+/* inner container */
+.Homeinner__container {
+  height: 250px;
+  left: 20px;
+  top: 59px;
+  display: flex;
+  align-items: center;
+  background: linear-gradient(253.58deg, #ffc000 1.55%, #ff8a00 95.8%);
+}
+.small__msg {
+  color: white;
+  font-size: 17px;
+  margin-left: 300px;
+  margin-top: 20px;
+  text-align: justify;
+  line-height: 2em;
+}
+.large__msg {
+  margin-bottom: 15px;
+  margin-left: 300px;
+  color: white;
+  text-align: justify;
+  font-size: 35px;
+  line-height: 1.5em;
+  font-family: Proxima Nova;
+}
+.error {
+  color: rgb(160, 79, 79);
+  margin: 50;
+}
+.home__svg {
+  margin-left: 500px;
+  width: 350px;
+  height: 224.19px;
+  top: 22.55px;
+}
+/* home container 2 */
+.home__container2 {
+  height: 600px;
+  display: flex;
+  align-items: center;
+  background-color: #0c2657;
+  top: 310px;
+  left: 20px;
+}
+
+.home__form {
+  position: absolute;
+  width: 450px;
+  height: 236px;
+  left: 760px;
+  top: 220px;
+}
+.home__stepApplogo {
+  margin-top: 150px;
+  margin-left: 140px;
+  width: 200px;
+  height: 100px;
+}
+/* form container */
+.home__con {
+  margin-top: 60px;
+  margin-left: 125px;
+  left: 20px;
+}
+.home__text {
+  margin-top: 50px;
+  margin-left: 60px;
+  width: 354px;
+  height: 28px;
+
+  font-family: Proxima Nova;
+  font-style: normal;
+  font-size: 25px;
+  line-height: 20px;
+  text-align: center;
+  color: #ffffff;
+}
+.home__dropdown {
+  position: relative;
+  margin-right: -170px;
+  right: 36%;
+  margin-top: 50px;
+  bottom: 74.03%;
+  width: 500px;
+  height: 60px;
+  background: #ffffff;
+  border-radius: 80px;
+  color: black;
+  padding: 5px;
+}
+.home__formbtn {
+  position: relative;
+  margin-left: -150px;
+  margin-top: 50px;
+  margin-right: 100px;
+  bottom: 74.03%;
+  border-radius: 80px;
+  padding: 5px;
+  color: black;
+  width: 550px;
+  height: 75.14px;
+  background-color: #ffc000;
+  font-size: 25px;
+}
+
+/* home container 3 */
+.home__container3 {
+  height: 1100px;
+  display: flex;
+  align-items: center;
+  background-color: white;
+  top: 100px;
+  left: 20px;
+}
+.home__features {
+  position: absolute;
+  width: 990px;
+  height: 210.25px;
+  left: 500px;
+  top: 970px;
+  background-color: white;
+}
+.vector__one {
+  position: absolute;
+  width: 255px;
+  height: 74px;
+  left: -300px;
+  top: -980px;
+}
+.vector__two {
+  position: absolute;
+  width: 255px;
+  height: 74px;
+  right: 655px;
+  top: -980px;
+}
+.vector__three {
+  position: absolute;
+  width: 255px;
+  height: 74px;
+  right: 300px;
+  top: -980px;
+}
+.yellow__circle {
+  position: absolute;
+  width: 85px;
+  height: 85px;
+  left: 392px;
+  top: 980px;
+  background: linear-gradient(253.58deg, #ffc000 1.55%, #ff8a00 95.8%);
+  border-radius: 100px;
+}
+.icon {
+  position: absolute;
+  left: 30.66%;
+  right: 67.74%;
+  top: 15.55%;
+  bottom: 50.72%;
+}
+.homeouter__text {
+  position: absolute;
+  width: 380.27px;
+  height: 22.67px;
+  left: 241px;
+  top: 1100px;
+
+  font-family: Proxima Nova;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 110.7%;
+  /* or 37px */
+  text-align: center;
+  color: #5c5c5c;
+}
+.homeinner__text {
+  position: absolute;
+  width: 255px;
+  height: 44px;
+  left: 305px;
+  top: 1137px;
+
+  font-family: Proxima Nova;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 14px;
+  text-align: center;
+  color: #5c5c5c;
+}
+.color__line {
+  position: absolute;
+  width: 560px;
+  height: 0px;
+  left: 860px;
+  top: 1270px;
+}
+
+/* home container 3 inner container */
+.home__innerCon {
+  position: absolute;
+  width: 1552px;
+  height: 544px;
+  left: -26px;
+  top: 1193px;
+}
+.whatstudentssay_OuterText {
+  position: absolute;
+  width: 534px;
+  height: 44px;
+  left: 750px;
+  top: 1340px;
+
+  font-family: Proxima Nova;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 45px;
+  line-height: 158.34%;
+  /* or 63px */
+  text-align: center;
+  color: #ff8a00;
+}
+.whatstudentssay_InnerText {
+  position: absolute;
+  width: 585px;
+  height: 53px;
+  left: 739px;
+  top: 1450px;
+
+  font-family: Proxima Nova;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 175.78%;
+  /* or 25px */
+  text-align: center;
+  color: #5c5c5c;
+}
+
+.cardOne {
+  position: absolute;
+  width: 360.5px;
+  height: 20.24px;
+  left: 50px;
+  top: 1460.76px;
+  /* bottom: 1100.99px; */
+  opacity: 35%;
+}
+.rectangle {
+  position: absolute;
+  width: 453px;
+  height: 396px;
+  left: -5px;
+  top: 130px;
+  background: white;
+  border: 2px solid rgb(241, 238, 238);
+  border-radius: 5px;
+}
+.quote {
+  position: absolute;
+  width: 42.51px;
+  height: 40.96px;
+  left: 43.76px;
+  top: 35px;
+  /* background: #5c5c5c; */
+}
+.text__rectangle {
+  position: absolute;
+  width: 355.1px;
+  height: 311.41px;
+  left: 43.76px;
+  top: 100.07px;
+
+  font-family: Proxima Nova;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 15px;
+  line-height: 175.78%;
+  text-align: justify;
+  /* or 25px */
+
+  color: #4e4444;
+}
+.mask {
+  position: absolute;
+  left: 43.76px;
+  right: 42.22%;
+  top: 60.69%;
+  bottom: 21.06%;
+}
+.aurthor__name {
+  position: absolute;
+  width: 140.04px;
+  height: 31.51px;
+  left: 131.29px;
+  top: 250px;
+
+  font-family: Proxima Nova;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 105.47%;
+  /* or 17px */
+  color: #5c5c5c;
+  border-radius: 5px;
+}
+.grade {
+  position: absolute;
+  width: 186.3px;
+  height: 18.9px;
+  left: 80.29px;
+  top: 280px;
+  font-family: Proxima Nova;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 12px;
+  line-height: 105.47%;
+  /* or 13px */
+  color: #5c5c5c;
+  border-radius: 5px;
+}
+.cardTwo {
+  position: absolute;
+  width: 360.5px;
+  height: 20.24px;
+  left: 450px;
+  top: 1460.76px;
+}
+.cardTwo_rectangle {
+  position: absolute;
+  width: 453px;
+  height: 400px;
+  left: 100.83px;
+  top: 130px;
+  background: #ffffff;
+  border: 1px solid #efefef;
+  box-shadow: 0px 12px 35px rgba(160, 121, 0, 0.2);
+  border-radius: 5px;
+}
+.cardThree {
+  position: absolute;
+  width: 453px;
+  height: 396px;
+  left: 1050.67px;
+  top: 1460.76px;
+
+  opacity: 0.5;
+}
+.cardFour {
+  position: absolute;
+  width: 453px;
+  height: 396px;
+  left: 1540.67px;
+  top: 1460.76px;
+  opacity: 0.5;
+}
+
+/* home container4 */
+.home__container4 {
+  height: 300px;
+  display: flex;
+  align-items: center;
+  background-color: white;
+  top: 0px;
+  left: 20px;
+}
+
+.container4__rectangle {
+  width: 1985px;
+  height: 298px;
+  left: 20px;
+  top: 2100px;
+  background: #ff9201;
+  transform: matrix(1, 0, 0, 1, 1, -1);
+}
+.group__A {
+  /* position: absolute; */
+  width: 103px;
+  height: 90px;
+  left: 281px;
+  top: 1780px;
+}
+.a_img {
+  position: absolute;
+  left: 75.33%;
+  right: 77.73%;
+  top: 10.5%;
+  /* bottom: 9.84%; */
+}
+.b_img {
+  position: absolute;
+  left: 55.33%;
+  right: 17.73%;
+  top: 10.5%;
+  /* bottom: 9.84%; */
+}
+.c_img {
+  position: absolute;
+  left: 35.33%;
+  right: 77.73%;
+  top: 10.5%;
+  /* bottom: 9.84%; */
+}
+.d_img {
+  position: absolute;
+  left: 15.33%;
+  right: 77.73%;
+  top: 10.5%;
+  /* bottom: 9.84%; */
+}
+
+.groupLetter {
+  position: relative;
+  width: 1500px;
+  height: 86px;
+  left: 205px;
+  top: 92px;
+  margin-right: 500px;
+}
+.groupLetterA {
+  position: relative;
+  width: 183px;
+  height: 41px;
+  left: 1305px;
+  bottom: 230px;
+}
+
+.groupLetterB {
+  position: relative;
+  width: 183px;
+  height: 41px;
+  left: 880px;
+  bottom: 185px;
+}
+.groupLetterC {
+  position: relative;
+  width: 183px;
+  height: 85px;
+  left: 470px;
+  bottom: 95px;
+}
+.groupLetterD {
+  position: relative;
+  width: 183px;
+  height: 85px;
+  left: 70px;
+  bottom: 10px;
+}
+.groupLetterText {
+  position: relative;
+  width: 183px;
+  height: 41px;
+  right: 20px;
+  bottom: 20px;
+  font-family: Proxima Nova;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 35px;
+  line-height: 182.7%;
+  /* or 73px */
+  text-align: center;
+
+  color: #ffffff;
+}
+.groupLetterNum {
+  position: relative;
+  width: 233px;
+  height: 23px;
+  right: 25px;
+  top: 6px;
+
+  font-family: Proxima Nova;
+  font-size: 18px;
+  line-height: 18px;
+  text-align: center;
+  color: #ffffff;
+}
+.home__container5 {
+  background-color: #0d2249;
+  height: 39px;
+  color: white;
+}

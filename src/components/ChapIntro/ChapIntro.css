@@ -1,0 +1,361 @@
+.chapdescription {
+  display: flex;
+  justify-content: center;
+  margin-left: auto;
+  margin-right: auto;
+  max-height: 1500px;
+  position: sticky;
+}
+/* login container 1 */
+.chapdescription__container {
+  height: 100%;
+  width: 100%;
+  left: 20px;
+  right: 20px;
+}
+
+/* login container 2 */
+.chapdescription__container1 {
+  height: 1100px;
+  display: flex;
+  align-items: center;
+  background-color: #0c2657;
+  top: 310px;
+  left: 20px;
+}
+.chapdescription__container2 {
+  background-color: #0d2249;
+  color: white;
+  height: 39px;
+}
+.chap__nameBox {
+  position: absolute;
+  width: 438px;
+  height: 78px;
+  left: 96px;
+  top: 115px;
+
+  font-family: Proxima Nova;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 150%;
+  /* or 27px */
+
+  display: flex;
+  align-items: center;
+
+  color: #ffffff;
+}
+.chap__name1 {
+  margin-right: 40px;
+}
+.chap__name2 {
+  margin-left: 20px;
+}
+.chap__play {
+  position: absolute;
+  width: 11px;
+  height: 11px;
+  left: 75px;
+  top: 38px;
+}
+
+.chap__rectangle {
+  z-index: 3;
+  position: absolute;
+  width: 32px;
+  height: 48px;
+  left: 468px;
+  top: 229px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #c4c4c4;
+  border-radius: 15px 0px 0px 15px;
+}
+.chap__grayFrame {
+  background: #c4c4c4;
+  border-radius: 15px 0px 0px 15px;
+}
+.chap__verticleLine {
+  position: absolute;
+  width: 870px;
+  height: 0px;
+  left: 65px;
+  top: 663px;
+  border: 1px solid rgba(255, 255, 255, 0.5);
+  transform: rotate(90deg);
+}
+.chap__triangle {
+  position: absolute;
+  left: 477px;
+  right: 0.01%;
+  top: 238px;
+  bottom: 0.01%;
+}
+.chap__smalltriangle {
+  position: absolute;
+  left: 490px;
+  right: 0.01%;
+  top: 250px;
+  bottom: 0.01%;
+  transform: rotate(180deg);
+}
+.chap__intro {
+  position: absolute;
+  width: 438px;
+  height: 78px;
+  left: 93px;
+  top: 212px;
+
+  font-family: Proxima Nova;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 28px;
+  line-height: 150%;
+  /* or 42px */
+
+  display: flex;
+  align-items: center;
+
+  color: #ffc000;
+}
+.chap__horizontalLine {
+  position: absolute;
+  width: 251px;
+  height: 1px;
+  left: 90px;
+  top: 275px;
+
+  background: #c4c4c4;
+  opacity: 0.28;
+  border-radius: 20px;
+  transform: matrix(1, 0, 0, -1, 0, 0);
+}
+.chap__zigzagLine {
+  position: absolute;
+  width: 30px;
+  height: 240px;
+  left: 90px;
+  top: 273px;
+}
+
+.chap__zigzagCircle1 {
+  position: absolute;
+  width: 22px;
+  height: 22px;
+  left: 107px;
+  top: 336px;
+}
+
+.chap__zigzagCircle2 {
+  position: absolute;
+  width: 22px;
+  height: 22px;
+  left: 107px;
+  top: 389px;
+}
+.chap__zigzagCircle3 {
+  position: absolute;
+  width: 22px;
+  height: 22px;
+  left: 107px;
+  top: 442px;
+}
+.chap__zigzagCircle4 {
+  position: absolute;
+  width: 22px;
+  height: 22px;
+  left: 107px;
+  top: 495px;
+}
+.chap__topic1 {
+  position: absolute;
+  width: 438px;
+  height: 248px;
+  left: -35px;
+  top: 337px;
+
+  font-family: Proxima Nova;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 150%;
+  /* or 27px */
+
+  color: #ffffff;
+}
+
+.chap__topic2 {
+  position: absolute;
+  width: 438px;
+  height: 248px;
+  left: 13px;
+  top: 385px;
+
+  font-family: Proxima Nova;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 150%;
+  /* or 27px */
+
+  color: #ffffff;
+}
+
+.chap__topic3 {
+  position: absolute;
+  width: 438px;
+  height: 248px;
+  left: 45px;
+  top: 440px;
+
+  font-family: Proxima Nova;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 150%;
+  /* or 27px */
+
+  color: #ffffff;
+}
+.chap__topic4 {
+  position: absolute;
+  width: 438px;
+  height: 248px;
+  left: 70px;
+  top: 490px;
+
+  font-family: Proxima Nova;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 150%;
+  /* or 27px */
+
+  color: #ffffff;
+}
+.chap__bigRectangle {
+  position: absolute;
+  width: 935px;
+  height: 330px;
+  left: 775px;
+  top: 228px;
+
+  background: #ffffff;
+  border-radius: 20px;
+}
+.blackplayBtn {
+  position: absolute;
+  width: 57px;
+  height: 58px;
+  left: 440px;
+  top: 132px;
+}
+.smallCricle {
+  position: absolute;
+  width: 92px;
+  height: 92px;
+  left: 420px;
+  top: 115px;
+  border: 1px solid #72747b;
+  box-sizing: border-box;
+  border-radius: 100%;
+}
+.chap__light {
+  position: absolute;
+  width: 438px;
+  height: 78px;
+  left: 800px;
+  top: 600px;
+
+  font-family: Proxima Nova;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 28px;
+  line-height: 150%;
+  /* or 42px */
+
+  display: flex;
+  align-items: center;
+
+  color: #ffc000;
+}
+.chap__lightdescription {
+  position: absolute;
+  width: 917px;
+  height: 273px;
+  left: 800px;
+  top: 690px;
+
+  font-family: Proxima Nova;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 15px;
+  text-align: justify;
+  /* or 111% */
+  color: #ffffff;
+}
+.chap__lightdescription_text {
+  color: #ffc000;
+}
+.chap__lightdescription2 {
+  position: absolute;
+  width: 917px;
+  height: 273px;
+  left: 800px;
+  top: 750px;
+
+  font-family: Proxima Nova;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 15px;
+  text-align: justify;
+  /* or 111% */
+
+  color: #ffffff;
+}
+.chap__lightdescription3 {
+  position: absolute;
+  width: 917px;
+  height: 200px;
+  left: 800px;
+  top: 810px;
+
+  font-family: Proxima Nova;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 15px;
+  text-align: justify;
+  /* or 111% */
+
+  color: #ffffff;
+}
+.chap__playQuiz {
+  position: absolute;
+  width: 140px;
+  height: 65px;
+  left: 1700px;
+  top: 925px;
+
+  background: #ffffff;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  border-radius: 100px;
+}
+
+.chap__playQuiztext {
+  font-family: Proxima Nova;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 150%;
+  /* or 27px */
+
+  text-align: center;
+
+  color: #0c2657;
+}

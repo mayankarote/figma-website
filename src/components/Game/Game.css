@@ -1,0 +1,606 @@
+.game {
+  display: flex;
+  justify-content: center;
+  margin-left: auto;
+  margin-right: auto;
+  max-height: 1700px;
+  position: sticky;
+}
+/* login container 1 */
+.game__container {
+  height: 100%;
+  width: 100%;
+  left: 20px;
+  right: 20px;
+}
+
+.game__container1 {
+  display: flex;
+  align-items: center;
+  height: 1600px;
+  left: 0px;
+  top: 2px;
+
+  background: #68aeff;
+}
+
+.game__container2 {
+  background-color: #0d2249;
+  color: white;
+  height: 39px;
+}
+
+.cloud__three {
+  position: absolute;
+  left: -0%;
+  top: 63.6%;
+}
+.cloud__two {
+  position: absolute;
+  left: 0px;
+  top: 69.22%;
+}
+.cloud__one {
+  position: absolute;
+  left: -0%;
+  top: 76.45%;
+}
+.score {
+  position: absolute;
+  width: 39px;
+  height: 15px;
+  left: 1740px;
+  top: 120px;
+
+  font-family: Proxima Nova;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 15px;
+  /* identical to box height */
+
+  display: flex;
+  align-items: center;
+  text-align: center;
+
+  color: #000000;
+}
+.score__Rectangle {
+  position: absolute;
+  width: 210px;
+  height: 73px;
+  left: 1653px;
+  top: 150px;
+
+  background: #ffffff;
+  border-radius: 100px;
+}
+.score__circleOne {
+  position: absolute;
+  width: 58px;
+  height: 59px;
+  left: 1795px;
+  top: 158px;
+  border-radius: 50%;
+  background: #a79c9a;
+}
+
+.score__circleTwo {
+  position: absolute;
+  width: 59px;
+  height: 59px;
+  left: 1730px;
+  top: 158px;
+  border-radius: 50%;
+  background: #ff8a00;
+}
+.score__circleThree {
+  position: absolute;
+  width: 58px;
+  height: 59px;
+  left: 1665px;
+  top: 158px;
+  border-radius: 50%;
+  background: #93c951;
+}
+.score__textOne {
+  position: absolute;
+  width: 35px;
+  height: 37px;
+  left: 1817px;
+  top: 169px;
+
+  font-family: Proxima Nova;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 20px;
+  line-height: 20px;
+  display: flex;
+  align-items: center;
+  text-align: center;
+
+  color: #ffffff;
+}
+.score__textTwo {
+  position: absolute;
+  width: 34px;
+  height: 37px;
+  left: 1754px;
+  top: 169px;
+
+  font-family: Proxima Nova;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 20px;
+  line-height: 20px;
+  display: flex;
+  align-items: center;
+  text-align: center;
+
+  color: #ffffff;
+}
+.score__textThree {
+  position: absolute;
+  width: 35px;
+  height: 37px;
+  left: 1687px;
+  top: 169px;
+
+  font-family: Proxima Nova;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 20px;
+  line-height: 20px;
+  display: flex;
+  align-items: center;
+  text-align: center;
+
+  color: #ffffff;
+}
+
+.sun {
+  position: absolute;
+  left: 10.7%;
+  top: 11.29%;
+}
+.small__cloud {
+  position: absolute;
+  left: 5.49%;
+  top: 14.92%;
+}
+.mini__cloud {
+  position: absolute;
+  left: 20.2%;
+  top: 17.29%;
+}
+/* pinhole camera start */
+.pinhole__setup {
+  position: absolute;
+  width: 240px;
+  height: 52px;
+  left: 213px;
+  top: -30px;
+
+  opacity: 0.3;
+}
+.pinhole__camera {
+  position: absolute;
+  width: 240px;
+  height: 52px;
+  left: 413px;
+  top: 186px;
+
+  background: #001b4e;
+  border-radius: 50px;
+  opacity: 15px;
+}
+.pinhole__cameraText {
+  position: absolute;
+  width: 166px;
+  height: 32px;
+  left: 450px;
+  top: 197px;
+
+  font-family: Proxima Nova;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 15px;
+  line-height: 15px;
+  display: flex;
+  align-items: center;
+  text-align: center;
+
+  color: #ffffff;
+}
+.pinhole__cameraCirlce {
+  position: absolute;
+  width: 41px;
+  height: 41px;
+  left: 605px;
+  top: 191px;
+
+  background: #ffffff;
+  border-radius: 50%;
+}
+.pinhole__cameraLock {
+  position: absolute;
+  left: 619px;
+  top: 201px;
+}
+/* pinhole camera end */
+
+/* step 1 */
+.square {
+  position: absolute;
+  left: 43.87%;
+  top: 8.27%;
+}
+.trees {
+  position: absolute;
+  width: 134.8px;
+  height: 102.4px;
+  left: 1030px;
+  top: 175px;
+}
+.fourWhite__steps {
+  position: absolute;
+  left: 40.6%;
+  top: 15.67%;
+}
+
+.fourWhite__stepsShadow {
+  position: absolute;
+  left: 40.6%;
+  top: 19%;
+  mix-blend-mode: multiply;
+}
+
+/* step1 end */
+/* pinhole camera 2 */
+.pinhole__setup2 {
+  position: absolute;
+  width: 240px;
+  height: 52px;
+  left: 510px;
+  top: 200px;
+
+  opacity: 0.3;
+}
+.pinhole__camera2 {
+  position: absolute;
+  width: 240px;
+  height: 52px;
+  left: 413px;
+  top: 186px;
+
+  background: #001b4e;
+  border-radius: 50px;
+  opacity: 15px;
+}
+.pinhole__cameraText2 {
+  position: absolute;
+  width: 166px;
+  height: 32px;
+  left: 490px;
+  top: 197px;
+
+  font-family: Proxima Nova;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 15px;
+  line-height: 15px;
+  display: flex;
+  align-items: center;
+  text-align: center;
+
+  color: #ffffff;
+}
+.pinhole__cameraCirlce2 {
+  position: absolute;
+  width: 41px;
+  height: 41px;
+  left: 605px;
+  top: 191px;
+
+  background: #ffffff;
+  border-radius: 50%;
+}
+.pinhole__cameraLock2 {
+  position: absolute;
+  left: 619px;
+  top: 201px;
+}
+/* pinhole camera 2 end */
+/* step2 */
+.square2 {
+  position: absolute;
+  left: 30.9%;
+  top: 20.9%;
+}
+.trees2 {
+  position: absolute;
+  width: 134.8px;
+  height: 102.4px;
+  left: 32.18%;
+  top: 18.9%;
+}
+.fourWhite__steps2 {
+  position: absolute;
+  left: 40.72%;
+  top: 28.87%;
+  transform: matrix(-1, 0, 0, 1, 0, 0);
+}
+
+.fourWhite__stepsShadow2 {
+  position: absolute;
+  left: 40.9%;
+  top: 32.4%;
+  mix-blend-mode: multiply;
+  transform: matrix(-1, 0, 0, 1, 0, 0);
+}
+.small__cloud1 {
+  position: absolute;
+  left: 58.55%;
+  top: 22.2%;
+}
+
+/* step 2 end */
+/* pinhole camera 3 */
+.pinhole__setup3 {
+  position: absolute;
+  width: 240px;
+  height: 52px;
+  left: 180px;
+  top: 400px;
+
+  opacity: 0.3;
+}
+.pinhole__camera3 {
+  position: absolute;
+  width: 240px;
+  height: 52px;
+  left: 413px;
+  top: 186px;
+
+  background: #001b4e;
+  border-radius: 50px;
+  opacity: 15px;
+}
+.pinhole__cameraText3 {
+  position: absolute;
+  width: 166px;
+  height: 32px;
+  left: 490px;
+  top: 197px;
+
+  font-family: Proxima Nova;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 15px;
+  line-height: 15px;
+  display: flex;
+  align-items: center;
+  text-align: center;
+
+  color: #ffffff;
+}
+.pinhole__cameraCirlce3 {
+  position: absolute;
+  width: 41px;
+  height: 41px;
+  left: 605px;
+  top: 191px;
+
+  background: #ffffff;
+  border-radius: 50%;
+}
+.pinhole__cameraLock3 {
+  position: absolute;
+  left: 619px;
+  top: 201px;
+}
+/* pinhole camera 3 end */
+.small__cloud2 {
+  position: absolute;
+  left: 18.59%;
+  top: 33.12%;
+}
+/* step 3 */
+.square3 {
+  position: absolute;
+  left: 42.7%;
+  top: 33%;
+  z-index: 1;
+}
+.trees3 {
+  position: absolute;
+  width: 134.8px;
+  height: 102.4px;
+  left: 50.78%;
+  top: 35.8%;
+  z-index: 1;
+}
+.fourWhite__steps3 {
+  position: absolute;
+  left: 39.6%;
+  top: 40.5%;
+}
+
+.fourWhite__stepsShadow3 {
+  position: absolute;
+  left: 39.6%;
+  top: 43.9%;
+  mix-blend-mode: multiply;
+  transform: matrix(1, 0, 0, 1, 0, 0);
+}
+.small__cloud3 {
+  position: absolute;
+  left: 84.59%;
+  top: 38.92%;
+}
+
+/* step 3 end */
+
+/* step 4 */
+.pinhole__setup4 {
+  position: absolute;
+  width: 240px;
+  height: 52px;
+  left: 500px;
+  top: 650px;
+  opacity: 0.3;
+}
+.pinhole__camera4 {
+  position: absolute;
+  width: 240px;
+  height: 52px;
+  left: 413px;
+  top: 186px;
+  background: #001b4e;
+  border-radius: 50px;
+  opacity: 15px;
+}
+.pinhole__cameraText4 {
+  position: absolute;
+  width: 180px;
+  height: 32px;
+  left: 430px;
+  top: 197px;
+
+  font-family: Proxima Nova;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 15px;
+  display: flex;
+  align-items: center;
+  text-align: center;
+
+  color: #ffffff;
+}
+.pinhole__cameraCirlce4 {
+  position: absolute;
+  width: 41px;
+  height: 41px;
+  left: 605px;
+  top: 191px;
+
+  background: #ffffff;
+  border-radius: 50%;
+}
+.pinhole__cameraLock4 {
+  position: absolute;
+  left: 619px;
+  top: 201px;
+}
+/* pinhole camera 3 end */
+.square4 {
+  position: absolute;
+  left: 30.7%;
+  top: 46.6%;
+  z-index: 1;
+}
+.trees4 {
+  position: absolute;
+  left: 34.5%;
+  top: 46%;
+  z-index: 1;
+}
+.Greenline {
+  position: absolute;
+  left: 33%;
+  top: 50.8%;
+  z-index: 1;
+}
+
+.fourWhite__steps4 {
+  position: absolute;
+  left: 40.6%;
+  top: 54.9%;
+  transform: matrix(-1, 0, 0, 1, 0, 0);
+}
+
+.fourWhite__stepsShadow4 {
+  position: absolute;
+  left: 40.6%;
+  top: 58.1%;
+  mix-blend-mode: multiply;
+  transform: matrix(-1, 0, 0, 1, 0, 0);
+}
+
+/* step 4 end */
+
+/* step 4 */
+.pinhole__setup5 {
+  position: absolute;
+  width: 240px;
+  height: 52px;
+  left: 740px;
+  top: 850px;
+}
+.pinhole__camera5 {
+  position: absolute;
+  width: 240px;
+  height: 52px;
+  left: 413px;
+  top: 186px;
+  background: #001b4e;
+  border-radius: 50px;
+  opacity: 15px;
+}
+.pinhole__cameraText5 {
+  position: absolute;
+  width: 180px;
+  height: 32px;
+  left: 449px;
+  top: 195px;
+
+  font-family: Proxima Nova;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 15px;
+  display: flex;
+  align-items: center;
+  text-align: center;
+
+  color: #ffffff;
+}
+.pinhole__cameraCirlce5 {
+  position: absolute;
+  width: 41px;
+  height: 41px;
+  left: 605px;
+  top: 191px;
+
+  background: #ffffff;
+  border-radius: 50%;
+}
+.pinhole__cameraPlay5 {
+  position: absolute;
+  left: 620px;
+  top: 205px;
+}
+.pinhole__yellowLine {
+  position: absolute;
+  width: 134px;
+  height: 3px;
+  left: 450px;
+  top: 225px;
+}
+/* pinhole camera 3 end */
+.square5 {
+  position: absolute;
+  left: 42.4%;
+  top: 58.9%;
+  z-index: 1;
+}
+.manLight {
+  position: absolute;
+  width: 93.9px;
+  height: 217.85px;
+  left: 938.98px;
+  top: 890px;
+  z-index: 1;
+}
+/* step 5 end */

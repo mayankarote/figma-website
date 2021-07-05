@@ -1,0 +1,164 @@
+.chapt {
+  display: flex;
+  justify-content: center;
+  margin-left: auto;
+  margin-right: auto;
+  max-height: 1500px;
+  position: sticky;
+}
+
+.chapt__container {
+  height: 100%px;
+  width: 100%;
+  left: 20px;
+  right: 20px;
+}
+
+.chapt__container1 {
+  height: 990px;
+  display: flex;
+  align-items: center;
+  background-color: #0c2657;
+  top: 310px;
+  left: 20px;
+}
+.chapt__container3 {
+  position: relative;
+  display: grid;
+  width: 430px;
+  height: 330px;
+  left: 185px;
+
+  background: #ffffff;
+  opacity: 3;
+  box-shadow: 0px 12px 35px rgba(160, 121, 0, 0.2);
+  border-radius: 10px;
+}
+.grid-container {
+  display: grid;
+  grid-column-gap: 150px;
+  grid-row-gap: 60px;
+  grid-template-columns: auto auto auto;
+  padding: 10px;
+}
+
+.grid-item {
+  border: 1px solid rgba(0, 0, 0, 0.8);
+  padding: 20px;
+  font-size: 30px;
+  text-align: center;
+}
+.chapt__title {
+  position: absolute;
+  width: 155px;
+  height: 34px;
+  left: 25px;
+  top: 30px;
+
+  font-family: Proxima Nova;
+  font-style: normal;
+  font-weight: bold;
+  text-align: justify;
+  font-size: 25px;
+  line-height: 34px;
+  color: #000000;
+}
+.chapt__info {
+  position: absolute;
+  width: 300px;
+  height: 48px;
+  left: 20px;
+  top: 135px;
+
+  font-family: Proxima Nova;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 15px;
+  text-align: justify;
+  line-height: 159.7%;
+  /* or 24px */
+  color: #000000;
+}
+.chapt__info2 {
+  position: absolute;
+  width: 218px;
+  height: 18px;
+  left: 15px;
+  top: 210px;
+
+  font-family: Proxima Nova;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 18px;
+  /* identical to box height */
+  color: #000000;
+}
+.chapt__img {
+  position: absolute;
+  width: 119px;
+  height: 49px;
+  left: 25px;
+  top: 260px;
+
+  background: #ff8f50;
+  mix-blend-mode: normal;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  border-radius: 31px;
+}
+.chapt__play {
+  position: absolute;
+  width: 18px;
+  height: 18px;
+  left: 20px;
+  top: 15px;
+}
+.chapt__unblock {
+  position: absolute;
+  width: 16px;
+  height: 18px;
+  left: 10px;
+  top: 15px;
+}
+.play__unBlock {
+  left: -550px;
+  top: 275px;
+  margin-left: 20px;
+  font-family: Proxima Nova;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 19px;
+  line-height: 19px;
+  /* identical to box height */
+
+  color: #140e0e;
+}
+.starr {
+  position: absolute;
+  left: 270px;
+  top: -355px;
+}
+.freeDemoo__btn {
+  position: absolute;
+  width: 137px;
+  height: 46px;
+  left: 260px;
+  top: -370px;
+
+  mix-blend-mode: normal;
+  border: 1px solid rgba(0, 0, 0, 0.2);
+  border-radius: 31px;
+
+  font-family: Proxima Nova;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 15px;
+  line-height: 159.7%;
+  color: #000000;
+}
+
+.chapt__container2 {
+  background-color: #0d2249;
+  color: white;
+  height: 39px;
+}

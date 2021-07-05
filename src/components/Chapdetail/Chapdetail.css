@@ -1,0 +1,278 @@
+.chapdetaildetail {
+  display: flex;
+  justify-content: center;
+  margin-left: auto;
+  margin-right: auto;
+  max-height: 1500px;
+  position: sticky;
+}
+
+.chapdetaildetail__container {
+  height: 100%;
+  width: 100%;
+  left: 20px;
+  right: 20px;
+}
+
+.chapdetaildetail__container1 {
+  height: 1100px;
+  display: flex;
+  align-items: center;
+  background-color: #0c2657;
+  top: 310px;
+  left: 20px;
+}
+
+.chapdetaildetail__container2 {
+  background-color: #0d2249;
+  color: white;
+  height: 39px;
+}
+
+.chapdetail__nameBox {
+  position: absolute;
+  width: 438px;
+  height: 78px;
+  left: 96px;
+  top: 115px;
+
+  font-family: Proxima Nova;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 150%;
+  /* or 27px */
+
+  display: flex;
+  align-items: center;
+
+  color: #ffffff;
+}
+
+.chapdetail__name1 {
+  margin-right: 40px;
+}
+
+.chapdetail__name2 {
+  margin-left: 20px;
+}
+
+.chapdetail__play {
+  position: absolute;
+  width: 11px;
+  height: 11px;
+  left: 70px;
+  top: 38px;
+}
+
+.chapdetail__rectangle {
+  position: absolute;
+  width: 32px;
+  height: 48px;
+  left: 100px;
+  top: 229px;
+
+  background: #c4c4c4;
+  border-radius: 15px 0px 0px 15px;
+  transform: rotate(180deg);
+}
+.chapdetail__verticleLine {
+  position: absolute;
+  width: 865px;
+  height: 0px;
+  left: -330px;
+  top: 665px;
+
+  border: 1px solid rgba(255, 255, 255, 0.5);
+  transform: rotate(90deg);
+}
+.chapdetail__triangle {
+  position: absolute;
+  left: 110px;
+  right: 0.01%;
+  top: 238px;
+  bottom: 0.01%;
+  transform: rotate(180deg);
+}
+.chapdetail__smalltriangle {
+  position: absolute;
+  left: 110px;
+  right: 0.01%;
+  top: 250px;
+  bottom: 0.01%;
+}
+
+.chapdetail__descriptionBigRectangle {
+  position: absolute;
+  width: 1450px;
+  height: 700px;
+  left: 300px;
+  top: 229px;
+
+  background: #0d2249;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  box-sizing: border-box;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  border-radius: 20px;
+}
+.chapdetail__smallCircleBox {
+  position: absolute;
+  width: 143.6px;
+  height: 27.12px;
+  left: 280px;
+  top: 30px;
+}
+.chapdetail__smallCircle1 {
+  position: absolute;
+  width: 22.6px;
+  height: 22.6px;
+  left: 680.26px;
+  top: 288.14px;
+}
+.chapdetail__smallCircle1text {
+  position: absolute;
+  width: 12.81px;
+  height: 13.56px;
+  left: 685.03px;
+  top: 292.42px;
+
+  font-family: Proxima Nova;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 23px;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  color: #ffffff;
+}
+.chapdetail__smallCircle2 {
+  position: absolute;
+  width: 22.6px;
+  height: 22.6px;
+  left: 724.4px;
+  top: 288.14px;
+}
+.chapdetail__smallCircle3 {
+  position: absolute;
+  width: 22.6px;
+  height: 22.6px;
+  left: 762px;
+  top: 288.14px;
+}
+.chapdetail__smallCircle4 {
+  position: absolute;
+  width: 22.6px;
+  height: 22.6px;
+  left: 799px;
+  top: 288.14px;
+}
+
+.chapdetail__middleHeading {
+  position: absolute;
+  width: 894px;
+  height: 55px;
+  left: 313px;
+  top: 420px;
+
+  font-family: Proxima Nova;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 28px;
+  line-height: 20px;
+  /* or 71% */
+
+  text-align: center;
+
+  color: #ffffff;
+}
+.chap__colorfulRing {
+  position: absolute;
+  width: 101px;
+  height: 101px;
+  left: 740.25px;
+  top: 510.42px;
+
+  transform: rotate(49.75deg);
+}
+.chap__tenSec {
+  position: absolute;
+  width: 38px;
+  height: 21px;
+  left: 770px;
+  top: 550px;
+
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 21px;
+  text-transform: uppercase;
+  /* identical to box height */
+
+  text-align: center;
+
+  color: #ffffff;
+}
+.chap__trueBtn {
+  position: absolute;
+  width: 145.05px;
+  height: 55.22px;
+  left: 600px;
+  top: 700.78px;
+  background: #93c951;
+  border-radius: 100px;
+}
+.chap__trueBtntext {
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 20px;
+  line-height: 21px;
+  text-align: center;
+
+  color: #ffffff;
+}
+.chap__falseBtn {
+  position: absolute;
+  width: 145.05px;
+  height: 55.22px;
+  left: 830.81px;
+  top: 700.78px;
+
+  background: #ff6f1e;
+  border-radius: 100px;
+}
+
+.chap__falseBtntext {
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 20px;
+  line-height: 21px;
+  text-align: center;
+
+  color: #ffffff;
+}
+
+.chapdetail__playQuiz {
+  position: absolute;
+  width: 180px;
+  height: 65px;
+  left: 300px;
+  top: 1000px;
+  background: #ffffff;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  border-radius: 100px;
+}
+
+.chapdetail__playQuiztext {
+  text-align: center;
+  font-family: Proxima Nova;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 150%;
+  /* or 27px */
+  color: #0c2657;
+}

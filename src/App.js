@@ -1,14 +1,16 @@
 import React from "react";
 import "./App.css";
-import Header from "./Header";
-import Header1 from "./components/Header1";
-import Home from "./Home";
-import Login from "./components/Login";
-import Grade from "./components/Grade";
-import Subject from "./components/Subject";
-import Chapters from "./components/Chapters";
+import Header from "./Header/Header";
+import Header1 from "./Header/Header1";
+import Home from "./Home/Home";
+import Login from "./components/Login/Login";
+import Grade from "./components/Grade/Grade";
+import Subject from "./components/Subject/Subject";
+import Chapters from "./components/Chapters/Chapters";
+import ChapIntro from "./components/ChapIntro/ChapIntro";
+import Chapdetail from "./components/Chapdetail/Chapdetail";
+import Game from "./components/Game/Game";
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
-// import "../node_modules/bootstrap/dist/css/bootstrap.min.css";
 import { ChakraProvider } from "@chakra-ui/react";
 
 function App() {
@@ -19,6 +21,21 @@ function App() {
         <Router>
           <div className="App">
             <Switch>
+              <Route exact path="/game">
+                <Header1 />
+                <Game />
+              </Route>
+
+              <Route exact path="/chapdetail">
+                <Header1 />
+                <Chapdetail />
+              </Route>
+
+              <Route exact path="/chapintro">
+                <Header1 />
+                <ChapIntro />
+              </Route>
+
               <Route exact path="/chapters">
                 <Header1 />
                 <Chapters />
