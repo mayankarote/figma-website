@@ -2,10 +2,6 @@ import React from "react";
 import "../Home.css";
 import userPic from "../../assests/User-Pic.png";
 import quote from "../../assests/quote.png";
-import a from "../../assests/a.png";
-import b from "../../assests/b.png";
-import c from "../../assests/c.png";
-import d from "../../assests/d.png";
 import {
   HomeContentFour,
   HomeItemsfour,

@@ -7,7 +7,6 @@ export const HomeContentFour = styled.div`
 
 export const HomeItemsfour = styled.div`
   display: flex;
-  flex-direction: column;
   flex-wrap: wrap;
   justify-content: center;
   align-items: center;

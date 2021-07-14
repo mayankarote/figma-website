@@ -1,7 +1,9 @@
 import React, { useState, useEffect } from "react";
 import "./Header1.css";
 import Logo from "./../assests/logo.jpg";
+import { Link } from "react-router-dom";
 import { Icon, Nav, NavLink } from "../components/Navbar/NavbarElements";
+import { NavItems, NavProfile, NavWelcome } from "./NavbarElements";
 
 export default function Header1() {
   const [statename, setStatename] = useState([]);
@@ -22,24 +24,17 @@ export default function Header1() {
 
   return (
     <Nav>
-      <NavLink to="./grade">
+      <Link to="./grade">
         <Icon src={Logo}></Icon>
-      </NavLink>
-
-      <div className="header__nav">
-        <div className="header__option">
-          <span className="header__welcome">
-            Welcome, {statename.selectValue}
-          </span>
-        </div>
-        <div className="header__profile">
-          <span>Profile </span>
-          <span>| </span>
-          <span style={{ cursor: "pointer" }} onClick={logout}>
-            Logout
-          </span>
-        </div>
-      </div>
+      </Link>
+      <NavItems>
+        <NavWelcome>Welcome, {statename.selectValue}</NavWelcome>
+        <NavProfile>Profile </NavProfile>
+        <NavProfile>| </NavProfile>
+        <NavProfile style={{ cursor: "pointer" }} onClick={logout}>
+          Logout
+        </NavProfile>
+      </NavItems>
     </Nav>
   );
 }
