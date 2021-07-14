@@ -1,33 +1,19 @@
 import React, { useState, useEffect } from "react";
-import "./Home.css";
+import "../Home.css";
 import axios from "axios";
-import StepApp from "./../assests/logo.png";
-import IsolatedSvg from "./../assests/Isolated Image Icon.svg";
+import StepApp from "../../assests/logo.png";
 import { Select } from "@chakra-ui/react";
 import { useHistory } from "react-router-dom";
-import config from "../config.json";
+import config from "../../config.json";
 import {
   HomeContainer,
-  HomeContentOne,
   HomeContentTwo,
-  HomeItems,
   HomeItemsTwo,
-  HomeP,
-  HomeP2,
-  SVGIcon,
   StepAppLogo,
-  NavIcon,
   HomeH1,
   HomeBtn,
   HomeSelect,
-} from "./HomeElements";
-import Header from "../Header/Header";
-import Footer from "../components/Footer";
-import HomePart from "./HomePart/HomePart";
-import HomePart0 from "./HomePart0/HomePart0";
-import HomePart1 from "./HomePart1/HomePart1";
-import HomePart2 from "./HomePart2/HomePart2";
-import HomePart3 from "./HomePart3/HomePart3";
+} from "./HomePartElements";
 
 export default function Home() {
   let history = useHistory();
@@ -71,33 +57,27 @@ export default function Home() {
   };
   return (
     <HomeContainer>
-      <Header />
-      <HomeContentOne>
-        <HomeItems>
-          <HomeP>
-            <p>
-              Students From Class 5th To 11th, Here is Your Dream Opportunity!
-            </p>
-          </HomeP>
-          <HomeP2>
-            <p>Play, Learn & Build Your Own Future</p>
-          </HomeP2>
-        </HomeItems>
-        <NavIcon>
-          <SVGIcon src={IsolatedSvg} alt="" />
-        </NavIcon>
-      </HomeContentOne>
-
-      <HomePart />
-      <HomePart1 />
-      <HomePart0 />
-      <HomePart2 />
-      <HomePart3 />
-      {/* <div className="home__container5">
-        <p>All Right Reserved | STEPAPP 2021</p>
-      </div> */}
-
-      {/* home container end  */}
+      <>
+        <HomeItemsTwo>
+          <StepAppLogo src={StepApp} alt="" />
+          <HomeH1>Select School</HomeH1>
+          <HomeSelect>
+            <Select
+              backgroundColor="white"
+              width="550px"
+              height="75px"
+              borderRadius="50px"
+              onChange={fetchDropdownValue}
+              placeholder="Select Name"
+            >
+              {states.map((state) => (
+                <option value={state.value}>{state.first_name}</option>
+              ))}
+            </Select>
+          </HomeSelect>
+          <HomeBtn onClick={proceed}>Proceed</HomeBtn>
+        </HomeItemsTwo>
+      </>
     </HomeContainer>
   );
 }

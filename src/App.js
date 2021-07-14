@@ -1,6 +1,5 @@
 import React from "react";
 import "./App.css";
-import Header from "./Header/Header";
 import Header1 from "./Header/Header1";
 import Home from "./Home/Home";
 import Login from "./components/Login/Login";
@@ -9,17 +8,20 @@ import Subject from "./components/Subject/Subject";
 import Chapters from "./components/Chapters/Chapters";
 import ChapIntro from "./components/ChapIntro/ChapIntro";
 import Chapdetail from "./components/Chapdetail/Chapdetail";
+import Footer from "./components/Footer";
 import Game from "./components/Game/Game";
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 import { ChakraProvider } from "@chakra-ui/react";
-
+import "bootstrap/dist/css/bootstrap.min.css";
+import { GlobalStyle } from "./globalStyles";
 function App() {
   return (
     //BEM
     <React.Fragment>
       <ChakraProvider>
         <Router>
-          <div className="App">
+          <GlobalStyle />
+          <>
             <Switch>
               <Route exact path="/game">
                 <Header1 />
@@ -57,11 +59,11 @@ function App() {
               </Route>
 
               <Route path="/">
-                <Header />
                 <Home />
               </Route>
             </Switch>
-          </div>
+          </>
+          {/* <Footer /> */}
         </Router>
       </ChakraProvider>
     </React.Fragment>

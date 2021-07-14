@@ -57,7 +57,7 @@ function Form() {
   }, []);
 
   return (
-    <div>
+    <div className="container">
       <form onSubmit={onSubmit}>
         <img className="login__stepApplogo" src={StepApp} alt="" />
         <div>

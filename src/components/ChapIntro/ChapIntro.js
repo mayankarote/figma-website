@@ -1,7 +1,6 @@
 import React, { useState } from "react";
 import "./ChapIntro.css";
 import play from "../../assests/play.png";
-import verticleLine from "../../assests/Line.png";
 import CollapeIcon from "../../assests/icons/CollapseIcon";
 import blackplayBtn from "../../assests/blackplayBtn.png";
 import { useHistory } from "react-router-dom";

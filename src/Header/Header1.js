@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from "react";
-import "./Header.css";
+import "./Header1.css";
 import Logo from "./../assests/logo.jpg";
+import { Icon, Nav, NavLink } from "../components/Navbar/NavbarElements";
 
 export default function Header1() {
   const [statename, setStatename] = useState([]);
@@ -20,10 +21,11 @@ export default function Header1() {
   };
 
   return (
-    <div className="header">
-      {/* logo */}
-      <img className="header__logo" src={Logo} alt="" />
-      {/* Navbar */}
+    <Nav>
+      <NavLink to="./grade">
+        <Icon src={Logo}></Icon>
+      </NavLink>
+
       <div className="header__nav">
         <div className="header__option">
           <span className="header__welcome">
@@ -38,6 +40,6 @@ export default function Header1() {
           </span>
         </div>
       </div>
-    </div>
+    </Nav>
   );
 }
