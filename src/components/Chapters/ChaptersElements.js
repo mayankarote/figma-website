@@ -2,30 +2,30 @@ import styled from "styled-components";
 
 export const ChapContainer = styled.div`
   height: 100vh;
-`;
-
-export const ChapContentOne = styled.div`
-  background: linear-gradient(253.58deg, #ffc000 1.55%, #ff8a00 95.8%);
-  height: calc(100px + 150px);
-  max-height: 100%;
-  padding: 0rem calc((100vw - 1400px) / 2);
+  margin: 0 auto;
 `;
 
 export const ChapItems = styled.div`
   display: flex;
-  flex-direction: column;
   justify-content: center;
   align-items: flex-start;
   height: 100vh;
   max-height: 100%;
-  padding: 0 2rem;
-  width: 650px;
+  background: #0c2651;
+
   color: #fff;
-  line-height: 1;
-  font-weight: bold;
   @media screen and (max-width: 650px) {
     width: 100%;
   }
+`;
+
+export const WhiteFourCard = styled.div`
+  width: 450px;
+  margin: 2rem;
+  padding: 0.5rem;
+  border: 2px solid #efefef;
+  box-shadow: 0px 12px 35px rgba(160, 121, 0, 0.2);
+  border-radius: 5px;
 `;
 
 export const ChapP = styled.p`
