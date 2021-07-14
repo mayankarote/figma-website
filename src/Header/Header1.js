@@ -1,5 +1,4 @@
 import React, { useState, useEffect } from "react";
-import "./Header1.css";
 import Logo from "./../assests/logo.jpg";
 import { Link } from "react-router-dom";
 import { Icon, Nav, NavItems, NavProfile, NavWelcome } from "./NavbarElements";

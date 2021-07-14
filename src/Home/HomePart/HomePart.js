@@ -1,5 +1,4 @@
 import React, { useState, useEffect } from "react";
-import "../Home.css";
 import axios from "axios";
 import StepApp from "../../assests/logo.png";
 import { Select } from "@chakra-ui/react";

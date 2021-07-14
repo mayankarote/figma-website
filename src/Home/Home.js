@@ -1,5 +1,4 @@
 import React from "react";
-import "./Home.css";
 import IsolatedSvg from "./../assests/Isolated Image Icon.svg";
 import {
   HomeContainer,

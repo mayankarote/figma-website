@@ -1,5 +1,4 @@
 import React from "react";
-import "../Home.css";
 import one from "../../assests/Group.png";
 import two from "../../assests/two.svg";
 import three from "../../assests/three.png";

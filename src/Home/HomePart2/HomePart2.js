@@ -1,5 +1,4 @@
 import React from "react";
-import "../Home.css";
 import userPic from "../../assests/User-Pic.png";
 import quote from "../../assests/quote.png";
 import {
