@@ -21,16 +21,21 @@ export const ChapItems = styled.div`
 
 export const WhiteFourCard = styled.div`
   width: 450px;
+  height: 350px;
   margin: 2rem;
+  background: white;
   padding: 0.5rem;
-  border: 2px solid #efefef;
+  border: 2px solid rgba(0, 0, 0, 0.8);
   box-shadow: 0px 12px 35px rgba(160, 121, 0, 0.2);
   border-radius: 5px;
 `;
 
 export const ChapP = styled.p`
-  font-size: 20px;
-  line-height: 1.3em;
+  font-weight: bold;
+  text-align: justify;
+  font-size: 25px;
+  line-height: 34px;
+  color: #000000;
   margin-left: 1rem;
 `;
 
