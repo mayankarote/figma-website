@@ -1,8 +1,15 @@
 import React, { useState, useEffect } from "react";
 import "./Form.css";
-import StepApp from "../../assests/logo.png";
 import { Link, useHistory } from "react-router-dom";
-import { FormP, StepAppLogo, LoginForm } from "./FormElements";
+import {
+  FormError,
+  FormInput,
+  FormLink,
+  FormP,
+  HomeH1,
+  LoginBtn,
+  LoginForm,
+} from "./FormElements";
 
 function Form() {
   let history = useHistory();
@@ -59,41 +66,45 @@ function Form() {
 
   return (
     <LoginForm>
-      <StepAppLogo src={StepApp} alt="" />
+      <HomeH1>Sign in to your account to continue</HomeH1>
       <form onSubmit={onSubmit}>
-        <FormP>Sign in to your account to continue</FormP>
-        {/* <div className="login__con">
+        <FormInput>
           <input
             type="text"
             placeholder="Mobile No"
             value={mobileNo}
-            className="login__input"
             onChange={validationMobileno}
             minLength={10}
             maxLength={10}
             required
+            style={{ outline: "none" }}
           />
+        </FormInput>
+        <FormInput>
           <input
             type="password"
-            placeholder="First Password"
             value={password.value}
-            className="login__input"
             onChange={validatePassword}
             required
+            style={{ outline: "none" }}
           />
-          <p style={{ color: "red" }}>
-            {password.isValid ? "Valid Password" : "Invalid Password"}
-          </p>
-          <div className="login__link">
-            <label className="login__outerLink">
-              Don’t have an account?
-              <Link className="login__innerLink"> Sign Up</Link>
-            </label>
-          </div>
-          <button type="submit" className="login__formbtn">
-            Proceed
-          </button>
-        </div> */}
+          <FormError>
+            {!password.value
+              ? ""
+              : password.isValid
+              ? "Valid Password"
+              : "Invalid Password"}
+          </FormError>
+        </FormInput>
+
+        <FormP>
+          Don’t have an account?
+          <Link style={{ color: "#ffc000", padding: 5 }}>
+            <>Sign Up</>
+          </Link>
+        </FormP>
+
+        <LoginBtn type="submit">Proceed</LoginBtn>
       </form>
     </LoginForm>
   );

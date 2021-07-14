@@ -18,3 +18,8 @@ export const LoginItems = styled.div`
     width: 100%;
   }
 `;
+
+export const StepAppLogo = styled.img`
+  width: 300px;
+  height: 100px;
+`;
