@@ -2,8 +2,7 @@ import React, { useState, useEffect } from "react";
 import "./Header1.css";
 import Logo from "./../assests/logo.jpg";
 import { Link } from "react-router-dom";
-import { Icon, Nav, NavLink } from "../components/Navbar/NavbarElements";
-import { NavItems, NavProfile, NavWelcome } from "./NavbarElements";
+import { Icon, Nav, NavItems, NavProfile, NavWelcome } from "./NavbarElements";
 
 export default function Header1() {
   const [statename, setStatename] = useState([]);

@@ -1,5 +1,4 @@
 import styled from "styled-components";
-import { NavLink as Link } from "react-router-dom";
 
 export const Nav = styled.nav`
   background: white;
@@ -20,9 +19,11 @@ export const NavItems = styled.nav`
   display: flex;
   flex-wrap: wrap;
   flex-direction: row;
-  align-content: center;
-  margin-left: 850px;
+  justify-content: flex-end;
+  align-items: center;
+  padding: 1rem;
   backgound: red;
+  font-weight: bold;
 `;
 
 export const NavWelcome = styled.p`
