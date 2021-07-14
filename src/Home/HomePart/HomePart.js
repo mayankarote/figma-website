@@ -7,7 +7,6 @@ import { useHistory } from "react-router-dom";
 import config from "../../config.json";
 import {
   HomeContainer,
-  HomeContentTwo,
   HomeItemsTwo,
   StepAppLogo,
   HomeH1,
@@ -57,27 +56,25 @@ export default function Home() {
   };
   return (
     <HomeContainer>
-      <>
-        <HomeItemsTwo>
-          <StepAppLogo src={StepApp} alt="" />
-          <HomeH1>Select School</HomeH1>
-          <HomeSelect>
-            <Select
-              backgroundColor="white"
-              width="550px"
-              height="75px"
-              borderRadius="50px"
-              onChange={fetchDropdownValue}
-              placeholder="Select Name"
-            >
-              {states.map((state) => (
-                <option value={state.value}>{state.first_name}</option>
-              ))}
-            </Select>
-          </HomeSelect>
-          <HomeBtn onClick={proceed}>Proceed</HomeBtn>
-        </HomeItemsTwo>
-      </>
+      <HomeItemsTwo>
+        <StepAppLogo src={StepApp} alt="" />
+        <HomeH1>Select School</HomeH1>
+        <HomeSelect>
+          <Select
+            backgroundColor="white"
+            width="550px"
+            height="75px"
+            borderRadius="50px"
+            onChange={fetchDropdownValue}
+            placeholder="Select Name"
+          >
+            {states.map((state) => (
+              <option value={state.value}>{state.first_name}</option>
+            ))}
+          </Select>
+        </HomeSelect>
+        <HomeBtn onClick={proceed}>Proceed</HomeBtn>
+      </HomeItemsTwo>
     </HomeContainer>
   );
 }

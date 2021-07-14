@@ -2,6 +2,7 @@ import React, { useState, useEffect } from "react";
 import "./Form.css";
 import StepApp from "../../assests/logo.png";
 import { Link, useHistory } from "react-router-dom";
+import { FormP, StepAppLogo, LoginForm } from "./FormElements";
 
 function Form() {
   let history = useHistory();
@@ -57,48 +58,44 @@ function Form() {
   }, []);
 
   return (
-    <div className="container">
+    <LoginForm>
+      <StepAppLogo src={StepApp} alt="" />
       <form onSubmit={onSubmit}>
-        <img className="login__stepApplogo" src={StepApp} alt="" />
-        <div>
-          <div className="login__text">
-            <label>Sign in to your account to continue</label>
+        <FormP>Sign in to your account to continue</FormP>
+        {/* <div className="login__con">
+          <input
+            type="text"
+            placeholder="Mobile No"
+            value={mobileNo}
+            className="login__input"
+            onChange={validationMobileno}
+            minLength={10}
+            maxLength={10}
+            required
+          />
+          <input
+            type="password"
+            placeholder="First Password"
+            value={password.value}
+            className="login__input"
+            onChange={validatePassword}
+            required
+          />
+          <p style={{ color: "red" }}>
+            {password.isValid ? "Valid Password" : "Invalid Password"}
+          </p>
+          <div className="login__link">
+            <label className="login__outerLink">
+              Don’t have an account?
+              <Link className="login__innerLink"> Sign Up</Link>
+            </label>
           </div>
-          <div className="login__con">
-            <input
-              type="text"
-              placeholder="Mobile No"
-              value={mobileNo}
-              className="login__input"
-              onChange={validationMobileno}
-              minLength={10}
-              maxLength={10}
-              required
-            />
-            <input
-              type="password"
-              placeholder="First Password"
-              value={password.value}
-              className="login__input"
-              onChange={validatePassword}
-              required
-            />
-            <p style={{ color: "red" }}>
-              {password.isValid ? "Valid Password" : "Invalid Password"}
-            </p>
-            <div className="login__link">
-              <label className="login__outerLink">
-                Don’t have an account?
-                <Link className="login__innerLink"> Sign Up</Link>
-              </label>
-            </div>
-            <button type="submit" className="login__formbtn">
-              Proceed
-            </button>
-          </div>
-        </div>
+          <button type="submit" className="login__formbtn">
+            Proceed
+          </button>
+        </div> */}
       </form>
-    </div>
+    </LoginForm>
   );
 }
 
