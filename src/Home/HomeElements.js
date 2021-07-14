@@ -3,15 +3,13 @@ import styled from "styled-components";
 
 export const HomeContainer = styled.div`
   height: 100vh;
-  background-position: center;
-  background-size: cover;
 `;
 
 export const HomeContentOne = styled.div`
   background: linear-gradient(253.58deg, #ffc000 1.55%, #ff8a00 95.8%);
   height: calc(100px + 150px);
   max-height: 100%;
-  padding: 0rem calc((100vw - 1300px) / 2);
+  padding: 0rem calc((100vw - 1400px) / 2);
 `;
 
 export const HomeItems = styled.div`

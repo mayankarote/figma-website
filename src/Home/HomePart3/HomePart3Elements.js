@@ -3,13 +3,15 @@ import styled from "styled-components";
 
 export const HomeContentFour = styled.div`
   max-height: 100vh;
-  margin: 15rem auto;
 `;
 
 export const HomeItemsfour = styled.div`
   display: flex;
+  flex-direction: column;
   flex-wrap: wrap;
   justify-content: center;
+  align-items: center;
+  align-content: center;
   background: #ff9201;
   transform: matrix(1, 0, 0, 1, 1, -1);
 `;

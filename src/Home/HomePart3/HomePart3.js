@@ -1,5 +1,4 @@
 import React from "react";
-import "../Home.css";
 import a from "../../assests/a.png";
 import b from "../../assests/b.png";
 import c from "../../assests/c.png";
@@ -11,8 +10,8 @@ import {
   CardInfo,
   CardHeading,
   CardTitle,
-  WhiteFourCard,
 } from "./HomePart3Elements";
+import Footer from "../../components/Footer";
 
 export default function HomePart2() {
   return (
@@ -45,6 +44,7 @@ export default function HomePart2() {
           </CardTitle>
         </CardInfo>
       </HomeItemsfour>
+      <Footer />
     </HomeContentFour>
   );
 }

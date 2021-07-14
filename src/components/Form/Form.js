@@ -1,15 +1,18 @@
 import React, { useState, useEffect } from "react";
 import "./Form.css";
 import { Link, useHistory } from "react-router-dom";
+import { toast } from "react-toastify";
+import "react-toastify/dist/ReactToastify.css";
+
 import {
   FormError,
   FormInput,
-  FormLink,
   FormP,
   HomeH1,
   LoginBtn,
   LoginForm,
 } from "./FormElements";
+toast.configure();
 
 function Form() {
   let history = useHistory();
@@ -47,7 +50,18 @@ function Form() {
       });
       alert("Login Succefully!");
     } else {
-      alert("Please enter valid Password!");
+      toast.error(
+        `Please enter valid Password!--
+          Length - 8 Character,
+          Sysmbol - at least 1,
+          Number - at least 1,
+          Uppercase - at least 1,
+          Lowercase - at least 1`,
+        {
+          position: toast.POSITION.TOP_CENTER,
+        },
+        { autoClose: false }
+      );
     }
   };
 
@@ -88,14 +102,14 @@ function Form() {
             required
             style={{ outline: "none" }}
           />
-          <FormError>
-            {!password.value
-              ? ""
-              : password.isValid
-              ? "Valid Password"
-              : "Invalid Password"}
-          </FormError>
         </FormInput>
+        <FormError>
+          {/* {!password.value
+            ? ""
+            : password.isValid
+            ? "Valid Password"
+            : "Invalid Password"} */}
+        </FormError>
 
         <FormP>
           Don’t have an account?
