@@ -4,16 +4,19 @@ import { useHistory } from "react-router-dom";
 import star from "../../assests/star.png";
 import image from "../../assests/image.png";
 import {
-  ChapP,
-  ChapP2,
+  ChapBtn,
+  ModelGroup,
   ModelOne,
-  ModelThree,
   ModelTwo,
   SubjectContainer,
   SubjectContent,
   SubjectGroup,
   SubjectIcon,
   SubjectItems,
+  SubjectStar,
+  SubjP,
+  SubjP2,
+  SubjP3,
   YellowCirlce,
 } from "./SubjectElements";
 import Footer from "../Footer";
@@ -41,11 +44,11 @@ export default function Subject() {
               <ModelOne>
                 <YellowCirlce />
                 <SubjectIcon src={image} alt="" />
-                <ChapP>Free Demo</ChapP>
-                <ChapP2>
+                <SubjP>Free Demo</SubjP>
+                <SubjP2>
                   Play the FREE demo chapters to understand how your speed and
                   accuracy will make you win
-                </ChapP2>
+                </SubjP2>
               </ModelOne>
             </Carousel.Item>
 
@@ -53,11 +56,11 @@ export default function Subject() {
               <ModelOne>
                 <YellowCirlce />
                 <SubjectIcon src={image} alt="" />
-                <ChapP>Free Demo</ChapP>
-                <ChapP2>
+                <SubjP>Free Demo</SubjP>
+                <SubjP2>
                   Play the FREE demo chapters to understand how your speed and
                   accuracy will make you win
-                </ChapP2>
+                </SubjP2>
               </ModelOne>
             </Carousel.Item>
 
@@ -65,30 +68,29 @@ export default function Subject() {
               <ModelTwo>
                 <YellowCirlce />
                 <SubjectIcon src={image} alt="" />
-                <ChapP>Free Demo</ChapP>
-                <ChapP2>
+                <SubjP>Free Demo</SubjP>
+                <SubjP2>
                   Play the FREE demo chapters to understand how your speed and
                   accuracy will make you win
-                </ChapP2>
+                </SubjP2>
               </ModelTwo>
             </Carousel.Item>
           </Carousel>
 
           <SubjectGroup>
-            <div className="grade__box1">
-              <p className="learn__science">Learn Science</p>
-              <p className="inner__text">Light Magnetism +6 more Chapters</p>
-              <p className="__chapters">8 Chapters</p>
-              <button
-                className="free__demo free_demotext"
-                onClick={onClickScience}
-              >
+            <ModelGroup>
+              <SubjP>Learn Science</SubjP>
+              <SubjP2>
+                <p>Light </p>Magnetism <p>+6 more Chapters</p>
+              </SubjP2>
+              <SubjP3>8 Chapters</SubjP3>
+              <ChapBtn onClick={onClickScience}>
+                <SubjectStar src={star} alt="" />
                 Free Demo
-              </button>
-              <img src={star} alt="" className="star" />
-            </div>
+              </ChapBtn>
+            </ModelGroup>
 
-            <div className="grade__box2">
+            {/* <div className="grade__box2">
               <p className="learn__math">Learn Math</p>
               <p className="info__text1">
                 Playing with Numbers
@@ -100,7 +102,7 @@ export default function Subject() {
                 Free Demo
               </button>
               <img src={star} alt="" className="star1" />
-            </div>
+            </div> */}
           </SubjectGroup>
         </SubjectItems>
       </SubjectContent>

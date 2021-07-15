@@ -57,21 +57,32 @@ export const SubjectIcon = styled.img`
   margin-top: -6rem;
 `;
 
-export const ChapP = styled.p`
+export const SubjP = styled.p`
   font-weight: 600;
-  font-size: 28px;
-  text-align: center;
-  color: #5c5c5c;
+  font-size: 25px;
+  color: white;
   padding: 1rem;
 `;
 
-export const ChapP2 = styled.p`
+export const SubjP2 = styled.p`
   font-size: 18px;
-  text-align: center;
-  color: #5c5c5c;
+  color: white;
+  padding: 1rem;
+`;
+
+export const SubjP3 = styled.div`
+  font-size: 25px;
+  color: white;
+  padding: 1rem;
 `;
 
 export const SubjectGroup = styled.div`
+  width: 905px;
+  height: 270px;
+  margin-top: 5rem;
+`;
+
+export const ModelGroup = styled.div`
   width: 450px;
   height: 330px;
   background: #ff8a48;
@@ -80,37 +91,11 @@ export const SubjectGroup = styled.div`
   border-radius: 10px;
 `;
 
-export const NavIcon = styled.div`
-  margin: 0 auto;
-`;
-
-export const GradeSmallCirlce5 = styled.p`
-  width: 98.83px;
-  height: 98.83px;
-  background: #ffffff;
-  border: 2px solid #979797;
-  cursor: pointer;
-  border-radius: 50%;
-  margin-left: 100px;
-  margin-top: 100px;
-`;
-
-export const GradeSmallCirlce6 = styled.div`
-  width: 98.83px;
-  height: 98.83px;
-  background: #ffffff;
-  border: 2px solid #979797;
-  cursor: pointer;
-  border-radius: 50%;
-`;
-
-export const ChapP3 = styled.div`
-  margin-top: 1.5rem;
-  font-size: 20px;
-  font-weight: bold;
-  line-height: 1.3em;
-  text-align: center;
-  color: #0c2657;
+export const SubjectStar = styled.img`
+  width: 18px;
+  height: 18px;
+  margin-right: 0.5rem;
+  background: yellow;
 `;
 
 export const ChapBtn = styled.button`
@@ -118,20 +103,16 @@ export const ChapBtn = styled.button`
   justify-content: center;
   align-items: center;
   align-content: center;
-
-  width: 145px;
-  height: 50px;
-  margin-top: 1rem;
-  background: #ff8f50;
+  width: 125px;
+  height: 40px;
+  background: #fff1c7;
+  mix-blend-mode: lighten;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
   border-radius: 31px;
-`;
-
-export const Chap4 = styled.p`
-  font-weight: 600;
-  font-size: 19px;
-  color: white;
-  text-align: center;
+  color: #111;
+  margin-left: 15rem;
+  font-size: 15px;
+  color: black;
 `;
 
 export const ChapAlign = styled.div`
@@ -155,10 +136,4 @@ export const ChapBtn1 = styled.div`
   border-radius: 31px;
   color: #111;
   font-size: 17px;
-`;
-
-export const ChapStar = styled.img`
-  width: 18px;
-  height: 18px;
-  margin-right: 0.5rem;
 `;
