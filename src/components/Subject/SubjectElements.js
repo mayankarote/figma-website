@@ -12,6 +12,7 @@ export const SubjectContent = styled.div`
 
 export const SubjectItems = styled.div`
   display: flex;
+  flex-direction: column;
   flex-wrap: wrap;
   justify-content: center;
   align-items: center;
@@ -26,20 +27,12 @@ export const SubjectItems = styled.div`
 export const ModelOne = styled.div`
   width: 500px;
   height: 300px;
-  margin: 3rem;
+  margin: 4rem;
   background-color: #ffffff;
   opacity: 0.95;
   box-shadow: 0px 12px 35px rgba(160, 121, 0, 0.2);
   border-radius: 10px;
-`;
-export const ModelTwo = styled.div`
-  width: 500px;
-  height: 500px;
-  margin: 3rem;
-  background-color: #ffffff;
-  opacity: 0.95;
-  box-shadow: 0px 12px 35px rgba(160, 121, 0, 0.2);
-  border-radius: 10px;
+  padding: 1rem;
 `;
 export const ModelThree = styled.div`
   width: 500px;
@@ -48,29 +41,34 @@ export const ModelThree = styled.div`
   background-color: #ffffff;
   box-shadow: 0px 12px 35px rgba(160, 121, 0, 0.2);
   border-radius: 10px;
+  padding: 1rem;
 `;
 
-export const GradeBigCirlce = styled.div`
+export const YellowCirlce = styled.div`
   width: 149px;
   height: 149px;
   background: linear-gradient(180deg, #ff8a00 13.64%, #ffc000 100%);
   border-radius: 100%;
+  margin-left: 7rem;
+`;
+export const SubjectIcon = styled.img`
+  cursor: pointer;
+  margin-left: 9rem;
+  margin-top: -6rem;
 `;
 
 export const ChapP = styled.p`
-  font-size: 45px;
-  line-height: 117.3%;
+  font-weight: 600;
+  font-size: 28px;
   text-align: center;
-  color: #1b1f5f;
-  margin: 7rem;
+  color: #5c5c5c;
+  padding: 1rem;
 `;
 
 export const ChapP2 = styled.p`
-  font-weight: bold;
-  font-size: 70px;
-  color: #0c2657;
+  font-size: 18px;
   text-align: center;
-  margin-top: 3rem;
+  color: #5c5c5c;
 `;
 export const GradeCirlceSelected = styled.div`
   cursor: pointer;
@@ -129,14 +127,6 @@ export const ChapBtn = styled.button`
   background: #ff8f50;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
   border-radius: 31px;
-`;
-
-export const ChapIcon = styled.img`
-  width: 18px;
-  height: 18px;
-  cursor: pointer;
-  text-align: left;
-  margin-right: 1rem;
 `;
 
 export const Chap4 = styled.p`

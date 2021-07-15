@@ -4,12 +4,16 @@ import { useHistory } from "react-router-dom";
 import star from "../../assests/star.png";
 import image from "../../assests/image.png";
 import {
+  ChapP,
+  ChapP2,
   ModelOne,
   ModelThree,
   ModelTwo,
   SubjectContainer,
   SubjectContent,
+  SubjectIcon,
   SubjectItems,
+  YellowCirlce,
 } from "./SubjectElements";
 import Footer from "../Footer";
 import { Carousel } from "react-bootstrap";
@@ -34,49 +38,42 @@ export default function Subject() {
           <Carousel>
             <Carousel.Item>
               <ModelOne>
-                <div className="subject__ecllipse" />
-                <img src={image} alt="" className="subject__image" />
-                <Carousel.Caption>
-                  <p className="subject__freeDemo">Free Demo</p>
-                  <p className="subject__freeDemotext">
-                    Play the FREE demo chapters to understand how your speed and
-                    accuracy will make you win
-                  </p>
-                </Carousel.Caption>
-              </ModelOne>
-            </Carousel.Item>
-            <Carousel.Item>
-              <ModelTwo>
-                <div className="subject__ecllipse" />
-                <img src={image} alt="" className="subject__image" />
-                <p className="subject__freeDemo">Free Demo</p>
-                <p className="subject__freeDemotext">
+                <YellowCirlce />
+                <SubjectIcon src={image} alt="" />
+                <ChapP>Free Demo</ChapP>
+                <ChapP2>
                   Play the FREE demo chapters to understand how your speed and
                   accuracy will make you win
-                </p>
-              </ModelTwo>
+                </ChapP2>
+              </ModelOne>
+            </Carousel.Item>
+
+            <Carousel.Item>
+              <ModelOne>
+                <YellowCirlce />
+                <SubjectIcon src={image} alt="" />
+                <ChapP>Free Demo</ChapP>
+                <ChapP2>
+                  Play the FREE demo chapters to understand how your speed and
+                  accuracy will make you win
+                </ChapP2>
+              </ModelOne>
             </Carousel.Item>
 
             <Carousel.Item>
               <ModelThree>
-                <div className="subject__ecllipse" />
-                <img src={image} alt="" className="subject__image" />
-                <p className="subject__freeDemo">Free Demo</p>
-                <p className="subject__freeDemotext">
+                <YellowCirlce />
+                <SubjectIcon src={image} alt="" />
+                <ChapP>Free Demo</ChapP>
+                <ChapP2>
                   Play the FREE demo chapters to understand how your speed and
                   accuracy will make you win
-                </p>
+                </ChapP2>
               </ModelThree>
             </Carousel.Item>
           </Carousel>
 
-          <div className="subject__group1">
-            {/* <ModelOne></ModelOne> */}
-            {/* <ModelTwo></ModelTwo> */}
-            {/* <ModelThree>
-              <p></p>
-            </ModelThree> */}
-          </div>
+          <div className="subject__group1"></div>
           <div className="grade__group2">
             <div className="grade__box1">
               <p className="learn__science">Learn Science</p>
