@@ -2,6 +2,8 @@ import React, { useState } from "react";
 import "./Grade.css";
 import bigCircle from "../../assests/bigCircle.png";
 import { useHistory } from "react-router-dom";
+import { GradeContainer, GradeContent, GradeItems } from "./GradeElements";
+import Footer from "../Footer";
 
 export default function Grade() {
   const [selectedGrade, setSelectedGrade] = useState();
@@ -17,9 +19,9 @@ export default function Grade() {
     }
   };
   return (
-    <div className="gradee">
-      <div className="gradee__container">
-        <div className="gradee__container1">
+    <GradeContainer>
+      <GradeContent>
+        <GradeItems>
           <div className="gradee__group">
             <div className="gradee__bigCircle">
               <img src={bigCircle} alt="" />
@@ -95,17 +97,13 @@ export default function Grade() {
             >
               <p className="gradee_eleven">11th</p>
             </div>
-            {/* <Link to="/subject"> */}
             <button className="gradee__formbtn" onClick={proceed}>
               Proceed
             </button>
-            {/* </Link> */}
           </div>
-        </div>
-        <div className="gradee__container2">
-          <p>All Right Reserved | STEPAPP 2021</p>
-        </div>
-      </div>
-    </div>
+        </GradeItems>
+      </GradeContent>
+      <Footer />
+    </GradeContainer>
   );
 }

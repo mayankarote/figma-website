@@ -1,16 +1,16 @@
 import styled from "styled-components";
 
-export const ChapContainer = styled.div`
+export const GradeContainer = styled.div`
   max-height: 100vh;
 `;
-export const ChapContent = styled.div`
+export const GradeContent = styled.div`
   max-height: 100%;
   height: calc(100vh - 80px);
   background: #0c2651;
   padding: 0rem calc((100vw - 1800px) / 2);
 `;
 
-export const ChapItems = styled.div`
+export const GradeItems = styled.div`
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
@@ -23,7 +23,7 @@ export const ChapItems = styled.div`
   }
 `;
 
-export const WhiteFourCard = styled.div`
+export const GradeGroup = styled.div`
   width: 450px;
   height: 320px;
   margin: 3rem;
