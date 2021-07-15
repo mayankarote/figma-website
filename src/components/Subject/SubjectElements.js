@@ -70,18 +70,16 @@ export const ChapP2 = styled.p`
   text-align: center;
   color: #5c5c5c;
 `;
-export const GradeCirlceSelected = styled.div`
-  cursor: pointer;
-  background: linear-gradient(
-    253.58deg,
-    #ffc000 1.55%,
-    #ff8a00 95.8%
-  ) !important;
-  width: 110px !important;
-  height: 110px !important;
-  border: 4px solid #ffffff !important;
-  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25) !important;
+
+export const SubjectGroup = styled.div`
+  width: 450px;
+  height: 330px;
+  background: #ff8a48;
+  opacity: 0.95;
+  box-shadow: 0px 12px 35px rgba(160, 121, 0, 0.2);
+  border-radius: 10px;
 `;
+
 export const NavIcon = styled.div`
   margin: 0 auto;
 `;

@@ -11,6 +11,7 @@ import {
   ModelTwo,
   SubjectContainer,
   SubjectContent,
+  SubjectGroup,
   SubjectIcon,
   SubjectItems,
   YellowCirlce,
@@ -73,8 +74,7 @@ export default function Subject() {
             </Carousel.Item>
           </Carousel>
 
-          <div className="subject__group1"></div>
-          <div className="grade__group2">
+          <SubjectGroup>
             <div className="grade__box1">
               <p className="learn__science">Learn Science</p>
               <p className="inner__text">Light Magnetism +6 more Chapters</p>
@@ -101,7 +101,7 @@ export default function Subject() {
               </button>
               <img src={star} alt="" className="star1" />
             </div>
-          </div>
+          </SubjectGroup>
         </SubjectItems>
       </SubjectContent>
       <Footer />
