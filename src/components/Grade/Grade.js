@@ -11,6 +11,9 @@ import {
   GradeSmallCirlce,
   ChapP3,
   NavIcon,
+  GradeSmallCirlce5,
+  GradeSmallCirlce6,
+  GradeCirlceSelected,
 } from "./GradeElements";
 import Footer from "../Footer";
 
@@ -35,12 +38,16 @@ export default function Grade() {
             <ChapP>
               Select <ChapP2>Grade {selectedGrade}</ChapP2>
             </ChapP>
+            <NavIcon>
+              <GradeSmallCirlce5 onClick={() => setSelectedGrade(5)}>
+                <ChapP3>5th</ChapP3>
+              </GradeSmallCirlce5>
+              <GradeSmallCirlce6 onClick={() => setSelectedGrade(6)}>
+                <ChapP3>6th</ChapP3>
+              </GradeSmallCirlce6>
+            </NavIcon>
           </GradeBigCirlce>
-          <NavIcon>
-            <GradeSmallCirlce onClick={() => setSelectedGrade(5)}>
-              <ChapP3>5th</ChapP3>
-            </GradeSmallCirlce>
-          </NavIcon>
+
           {/* <div
               className={
                 selectedGrade === 5

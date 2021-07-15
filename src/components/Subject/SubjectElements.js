@@ -1,16 +1,16 @@
 import styled from "styled-components";
 
-export const GradeContainer = styled.div`
+export const SubjectContainer = styled.div`
   max-height: 100vh;
 `;
-export const GradeContent = styled.div`
+export const SubjectContent = styled.div`
   max-height: 100%;
   height: calc(100vh - 80px);
   background: #0c2651;
   padding: 0rem calc((100vw - 1800px) / 2);
 `;
 
-export const GradeItems = styled.div`
+export const SubjectItems = styled.div`
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
@@ -23,15 +23,38 @@ export const GradeItems = styled.div`
   }
 `;
 
+export const ModelOne = styled.div`
+  width: 500px;
+  height: 300px;
+  margin: 3rem;
+  background-color: #ffffff;
+  opacity: 0.95;
+  box-shadow: 0px 12px 35px rgba(160, 121, 0, 0.2);
+  border-radius: 10px;
+`;
+export const ModelTwo = styled.div`
+  width: 500px;
+  height: 500px;
+  margin: 3rem;
+  background-color: #ffffff;
+  opacity: 0.95;
+  box-shadow: 0px 12px 35px rgba(160, 121, 0, 0.2);
+  border-radius: 10px;
+`;
+export const ModelThree = styled.div`
+  width: 500px;
+  height: 300px;
+  margin: 3rem;
+  background-color: #ffffff;
+  box-shadow: 0px 12px 35px rgba(160, 121, 0, 0.2);
+  border-radius: 10px;
+`;
+
 export const GradeBigCirlce = styled.div`
-  width: 561px;
-  height: 561px;
-  margin: 4rem;
-  background: #c4c4c4;
-  border: 9px solid #ffffff;
-  border-radius: 50%;
-  box-sizing: border-box;
-  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  width: 149px;
+  height: 149px;
+  background: linear-gradient(180deg, #ff8a00 13.64%, #ffc000 100%);
+  border-radius: 100%;
 `;
 
 export const ChapP = styled.p`
