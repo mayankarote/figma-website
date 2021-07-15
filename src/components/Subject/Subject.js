@@ -15,6 +15,9 @@ import {
   SubjectIcon,
   SubjectItems,
   SubjectStar,
+  SubjModelP,
+  SubjModelP2,
+  SubjModelP3,
   SubjP,
   SubjP2,
   SubjP3,
@@ -80,27 +83,25 @@ export default function Subject() {
 
           <SubjectGroup>
             <ModelGroup>
-              <SubjP>Learn Science</SubjP>
-              <SubjP2>
+              <SubjModelP>Learn Science</SubjModelP>
+              <SubjModelP2>
                 <p>Light </p>Magnetism <p>+6 more Chapters</p>
-              </SubjP2>
-              <SubjP3>8 Chapters</SubjP3>
+              </SubjModelP2>
+              <SubjModelP3>8 Chapters</SubjModelP3>
               <ChapBtn onClick={onClickScience}>
-                <SubjectStar src={star} alt="" />
-                Free Demo
+                <SubjectStar src={star} alt="" />1 Free Demo
               </ChapBtn>
             </ModelGroup>
 
             <ModelGroupTwo>
-              <SubjP>Learn Math</SubjP>
-              <SubjP2>
+              <SubjModelP>Learn Math</SubjModelP>
+              <SubjModelP2>
                 <p>Playing with Numbers </p>Number System,{" "}
                 <p>+7 more chapters</p>
-              </SubjP2>
-              <SubjP3>9 Chapters</SubjP3>
-              <ChapBtn onClick={onClickScience}>
-                <SubjectStar src={star} alt="" />
-                Free Demo
+              </SubjModelP2>
+              <SubjModelP3>9 Chapters</SubjModelP3>
+              <ChapBtn onClick={alertMsg}>
+                <SubjectStar src={star} alt="" />1 Free Demo
               </ChapBtn>
             </ModelGroupTwo>
           </SubjectGroup>

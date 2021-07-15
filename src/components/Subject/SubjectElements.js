@@ -5,14 +5,13 @@ export const SubjectContainer = styled.div`
 `;
 export const SubjectContent = styled.div`
   max-height: 100%;
-  height: calc(100vh - 80px);
+  height: calc(100vh + 100px);
   background: #0c2651;
-  padding: 0rem calc((100vw - 1800px) / 2);
+  padding: 0rem calc((100vw - 1600px) / 2);
 `;
 
 export const SubjectItems = styled.div`
   display: flex;
-  flex-direction: column;
   flex-wrap: wrap;
   justify-content: center;
   align-items: center;
@@ -37,7 +36,7 @@ export const ModelOne = styled.div`
 export const ModelTwo = styled.div`
   width: 500px;
   height: 300px;
-  margin: 3rem;
+  margin: 4rem;
   background-color: #ffffff;
   box-shadow: 0px 12px 35px rgba(160, 121, 0, 0.2);
   border-radius: 10px;
@@ -60,17 +59,36 @@ export const SubjectIcon = styled.img`
 export const SubjP = styled.p`
   font-weight: 600;
   font-size: 25px;
-  color: white;
+  color: #5c5c5c;
+  text-align: center;
   padding: 1rem;
 `;
 
 export const SubjP2 = styled.p`
   font-size: 18px;
+  color: #5c5c5c;
+  text-align: center;
+`;
+
+export const SubjP3 = styled.p`
+  font-size: 25px;
+  color: #5c5c5c;
+  text-align: center;
+`;
+
+export const SubjModelP = styled.p`
+  font-weight: 600;
+  font-size: 25px;
   color: white;
   padding: 1rem;
 `;
 
-export const SubjP3 = styled.p`
+export const SubjModelP2 = styled.p`
+  font-size: 18px;
+  color: white;
+  padding: 1rem;
+`;
+export const SubjModelP3 = styled.p`
   font-size: 25px;
   color: white;
   padding: 1rem;
@@ -78,15 +96,10 @@ export const SubjP3 = styled.p`
 
 export const SubjectGroup = styled.div`
   display: flex;
-  flex-direction: column;
   flex-wrap: wrap;
   justify-content: center;
-  align-items: center;
   align-content: center;
-  width: 1005px;
-  height: 500px;
-  padding: 10rem;
-  background: yellow;
+  margin: 10rem;
 `;
 
 export const ModelGroup = styled.div`
@@ -97,6 +110,7 @@ export const ModelGroup = styled.div`
   box-shadow: 0px 12px 35px rgba(160, 121, 0, 0.2);
   border-radius: 10px;
   margin: 2rem;
+  padding: 1rem;
 `;
 
 export const ModelGroupTwo = styled.div`
@@ -107,13 +121,7 @@ export const ModelGroupTwo = styled.div`
   box-shadow: 0px 12px 35px rgba(160, 121, 0, 0.2);
   border-radius: 10px;
   margin: 2rem;
-`;
-
-export const SubjectStar = styled.img`
-  width: 18px;
-  height: 18px;
-  margin-right: 0.5rem;
-  background: yellow;
+  padding: 1rem;
 `;
 
 export const ChapBtn = styled.button`
@@ -121,14 +129,20 @@ export const ChapBtn = styled.button`
   justify-content: center;
   align-items: center;
   align-content: center;
+
   width: 125px;
   height: 40px;
   background: #fff1c7;
-  mix-blend-mode: lighten;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
   border-radius: 31px;
   color: #111;
-  margin-left: 15rem;
+  margin-left: 14rem;
+  margin-top: -1rem;
   font-size: 15px;
   color: black;
+`;
+export const SubjectStar = styled.img`
+  width: 18px;
+  height: 18px;
+  margin-right: 0.5rem;
 `;
