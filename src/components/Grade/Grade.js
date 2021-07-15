@@ -1,8 +1,17 @@
 import React, { useState } from "react";
 import "./Grade.css";
-import bigCircle from "../../assests/bigCircle.png";
 import { useHistory } from "react-router-dom";
-import { GradeContainer, GradeContent, GradeItems } from "./GradeElements";
+import {
+  ChapP2,
+  GradeBigCirlce,
+  GradeContainer,
+  GradeContent,
+  GradeItems,
+  ChapP,
+  GradeSmallCirlce,
+  ChapP3,
+  NavIcon,
+} from "./GradeElements";
 import Footer from "../Footer";
 
 export default function Grade() {
@@ -22,12 +31,17 @@ export default function Grade() {
     <GradeContainer>
       <GradeContent>
         <GradeItems>
-          <div className="gradee__group">
-            <div className="gradee__bigCircle">
-              <img src={bigCircle} alt="" />
-              <p className="gradee__select">Select Grade {selectedGrade}</p>
-            </div>
-            <div
+          <GradeBigCirlce>
+            <ChapP>
+              Select <ChapP2>Grade {selectedGrade}</ChapP2>
+            </ChapP>
+          </GradeBigCirlce>
+          <NavIcon>
+            <GradeSmallCirlce onClick={() => setSelectedGrade(5)}>
+              <ChapP3>5th</ChapP3>
+            </GradeSmallCirlce>
+          </NavIcon>
+          {/* <div
               className={
                 selectedGrade === 5
                   ? "gradee__smallCircleSelected gradee__smallCircle5"
@@ -36,8 +50,8 @@ export default function Grade() {
               onClick={() => setSelectedGrade(5)}
             >
               <p className="gradee_five">5th</p>
-            </div>
-            <div
+            </div> */}
+          {/* {/* <div
               className={
                 selectedGrade === 6
                   ? "gradee__smallCircleSelected gradee__smallCircle6"
@@ -46,8 +60,8 @@ export default function Grade() {
               onClick={() => setSelectedGrade(6)}
             >
               <p className="gradee_six">6th</p>
-            </div>
-            <div
+            </div> */}
+          {/* <div
               className={
                 selectedGrade === 7
                   ? "gradee__smallCircleSelected gradee__smallCircle7"
@@ -56,8 +70,8 @@ export default function Grade() {
               onClick={() => setSelectedGrade(7)}
             >
               <p className="gradee_seven">7th</p>
-            </div>
-            <div
+            </div> */}
+          {/* <div
               className={
                 selectedGrade === 8
                   ? "gradee__smallCircleSelected gradee__smallCircle8"
@@ -66,8 +80,8 @@ export default function Grade() {
               onClick={() => setSelectedGrade(8)}
             >
               <p className="gradee_eight">8th</p>
-            </div>
-            <div
+            </div> */}
+          {/* <div
               className={
                 selectedGrade === 9
                   ? "gradee__smallCircleSelected gradee__smallCircle9"
@@ -76,8 +90,8 @@ export default function Grade() {
               onClick={() => setSelectedGrade(9)}
             >
               <p className="gradee_nine">9th</p>
-            </div>
-            <div
+            </div> */}
+          {/* <div
               className={
                 selectedGrade === 10
                   ? "gradee__smallCircleSelected gradee__smallCircle10"
@@ -86,8 +100,8 @@ export default function Grade() {
               onClick={() => setSelectedGrade(10)}
             >
               <p className="gradee_ten">10th</p>
-            </div>
-            <div
+            </div> */}
+          {/* <div
               className={
                 selectedGrade === 11
                   ? "gradee__smallCircleSelected gradee__smallCircle11"
@@ -96,11 +110,11 @@ export default function Grade() {
               onClick={() => setSelectedGrade(11)}
             >
               <p className="gradee_eleven">11th</p>
-            </div>
-            <button className="gradee__formbtn" onClick={proceed}>
-              Proceed
-            </button>
-          </div>
+            </div> */}
+
+          {/* <button className="gradee__formbtn" onClick={proceed}>
+            Proceed
+          </button> */}
         </GradeItems>
       </GradeContent>
       <Footer />

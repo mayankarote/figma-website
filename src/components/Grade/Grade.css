@@ -30,6 +30,7 @@
   text-align: center;
   color: #1b1f5f;
 }
+
 .gradee__smallCircleSelected {
   cursor: pointer;
   background: linear-gradient(
@@ -50,7 +51,7 @@
   background: #ffffff;
   border: 2px solid #979797;
   cursor: pointer;
-  left: 602.97px;
+  left: 1082.97px;
   border-radius: 50%;
   top: 129px;
 }
@@ -62,7 +63,7 @@
   background: #ffffff;
   border: 2px solid #979797;
   cursor: pointer;
-  left: 775.9px;
+  left: 1075.9px;
   top: 215.35px;
   /* background-color: linear-gradient(253.58deg, #ffc000 1.55%, #ff8a00 95.8%); */
 }

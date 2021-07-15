@@ -23,40 +23,74 @@ export const GradeItems = styled.div`
   }
 `;
 
-export const GradeGroup = styled.div`
-  width: 450px;
-  height: 320px;
-  margin: 3rem;
-  background: white;
-  padding: 0.8rem;
-  border: 2px solid rgba(0, 0, 0, 0.8);
-  box-shadow: 0px 12px 35px rgba(160, 121, 0, 0.2);
-  border-radius: 10px;
-  opacity: 0.95;
+export const GradeBigCirlce = styled.div`
+  width: 561px;
+  height: 561px;
+  margin: 4rem;
+  background: #c4c4c4;
+  border: 9px solid #ffffff;
+  border-radius: 50%;
+  box-sizing: border-box;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 `;
 
 export const ChapP = styled.p`
-  font-weight: bold;
-  text-align: justify;
-  font-size: 25px;
-  line-height: 34px;
-  color: #000000;
-  margin-left: 1rem;
+  font-size: 45px;
+  line-height: 117.3%;
+  text-align: center;
+  color: #1b1f5f;
+  margin: 7rem;
 `;
 
 export const ChapP2 = styled.p`
-  font-size: 20px;
-  line-height: 1.5em;
-  margin-left: 1rem;
-  margin-top: 1rem;
+  font-weight: bold;
+  font-size: 70px;
   color: #0c2657;
+  text-align: center;
+  margin-top: 3rem;
 `;
-export const ChapP3 = styled.p`
+export const GradeCirlceSelected = styled.div`
+  cursor: pointer;
+  background: linear-gradient(
+    253.58deg,
+    #ffc000 1.55%,
+    #ff8a00 95.8%
+  ) !important;
+  width: 110px !important;
+  height: 110px !important;
+  border: 4px solid #ffffff !important;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25) !important;
+`;
+export const NavIcon = styled.div`
+  display: block;
+  position: absolute;
+  top: 0;
+  right: 0;
+  cursor: pointer;
+  color: #fff;
+  p {
+    transform: translate(-175%, 100%);
+    font-weight: bold;
+  }
+`;
+
+export const GradeSmallCirlce = styled.div`
+  width: 98.83px;
+  height: 98.83px;
+  background: #ffffff;
+  border: 2px solid #979797;
+  cursor: pointer;
+  border-radius: 50%;
+  margin-top: 6rem;
+  margin-right: 55rem;
+`;
+
+export const ChapP3 = styled.div`
+  margin-top: 1.5rem;
   font-size: 20px;
   font-weight: bold;
   line-height: 1.3em;
-  margin-left: 1rem;
-  margin-top: 1.2rem;
+  text-align: center;
   color: #0c2657;
 `;
 
