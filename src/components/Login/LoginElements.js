@@ -12,7 +12,6 @@ export const LoginItems = styled.div`
   align-items: center;
   align-content: center;
   height: 100vh;
-  padding: 0 2rem;
   background: #0c2657;
   @media screen and (max-width: 650px) {
     width: 100%;

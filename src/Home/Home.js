@@ -11,7 +11,7 @@ import {
 } from "./HomeElements";
 import Header from "../Header/Header";
 import HomePart from "./HomePart/HomePart";
-import HomePart0 from "./HomePart0/HomePart0";
+import HomePartColorLine from "./HomePartColorLine/HomePart0";
 import HomePart1 from "./HomePart1/HomePart1";
 import HomePart2 from "./HomePart2/HomePart2";
 import HomePart3 from "./HomePart3/HomePart3";
@@ -38,7 +38,7 @@ export default function Home() {
 
       <HomePart />
       <HomePart1 />
-      <HomePart0 />
+      <HomePartColorLine />
       <HomePart2 />
       <HomePart3 />
     </HomeContainer>

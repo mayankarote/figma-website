@@ -12,9 +12,6 @@ export default function Login() {
         <Form />
       </LoginItems>
       <Footer />
-      {/* <div className="login__container2">
-        <p>All Right Reserved | STEPAPP 2021</p>
-      </div> */}
     </LoginContainer>
   );
 }
