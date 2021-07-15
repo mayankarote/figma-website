@@ -34,7 +34,7 @@ export const ModelOne = styled.div`
   border-radius: 10px;
   padding: 1rem;
 `;
-export const ModelThree = styled.div`
+export const ModelTwo = styled.div`
   width: 500px;
   height: 300px;
   margin: 3rem;

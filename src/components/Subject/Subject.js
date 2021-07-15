@@ -61,7 +61,7 @@ export default function Subject() {
             </Carousel.Item>
 
             <Carousel.Item>
-              <ModelThree>
+              <ModelTwo>
                 <YellowCirlce />
                 <SubjectIcon src={image} alt="" />
                 <ChapP>Free Demo</ChapP>
@@ -69,7 +69,7 @@ export default function Subject() {
                   Play the FREE demo chapters to understand how your speed and
                   accuracy will make you win
                 </ChapP2>
-              </ModelThree>
+              </ModelTwo>
             </Carousel.Item>
           </Carousel>
 
