@@ -1,39 +1,78 @@
 import styled from "styled-components";
+import { NavLink as Link } from "react-router-dom";
 
 export const Nav = styled.nav`
   background: white;
   height: 80px;
+  display: flex;
+`;
+
+export const NavLink = styled(Link)`
+  color: #fff;
+  font-size: 2rem;
+  display: flex;
+  text-decoration: none;
+  cursor: pointer;
+  padding: 1rem;
+  @media screen and (max-width: 400px) {
+    position: absolute;
+    top: 10px;
+    left: 20px;
+  }
 `;
 
 export const Icon = styled.img`
-  position: absolute;
-  width: 110px;
-  left: 100px;
+  width: 125px;
+  height: 125px;
   border-radius: 30px;
-  border: 12px solid white;
-  z-index: 1;
-  cursor: pointer;
+  border: 11px solid white;
 `;
 
-export const NavItems = styled.nav`
-  display: flex;
-  flex-wrap: wrap;
-  flex-direction: row;
-  justify-content: flex-end;
-  align-items: center;
+export const NavItems = styled.div`
+  display: block;
+  position: absolute;
+  top: 0;
+  right: 0px;
+  cursor: pointer;
+  color: #111;
   padding: 1rem;
-  backgound: red;
-  font-weight: bold;
+  font-size: 20px;
+  p {
+    transform: translate(-105%, 10%);
+    font-weight: bold;
+  }
 `;
 
-export const NavWelcome = styled.p`
-  font-size: 20px;
-  text-align: right;
-`;
-
-export const NavProfile = styled.p`
-  font-size: 20px;
-  color: #ff8a00;
+export const NavItems2 = styled.div`
+  display: block;
+  position: absolute;
+  top: 0;
+  right: 0px;
   cursor: pointer;
-  margin-left: 1rem;
+  color: #111;
+  padding: 1rem;
+  font-size: 20px;
+  p {
+    transform: translate(-110%, 10%);
+    font-weight: bold;
+    color: #ff8a00;
+    cursor: pointer;
+  }
+`;
+
+export const NavItems3 = styled.div`
+  display: block;
+  position: absolute;
+  top: 0;
+  right: 0px;
+  cursor: pointer;
+  color: #111;
+  padding: 1rem;
+  font-size: 20px;
+  p {
+    transform: translate(-10%, 10%);
+    font-weight: bold;
+    color: #ff8a00;
+    cursor: pointer;
+  }
 `;
