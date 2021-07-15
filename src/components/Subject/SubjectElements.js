@@ -70,16 +70,23 @@ export const SubjP2 = styled.p`
   padding: 1rem;
 `;
 
-export const SubjP3 = styled.div`
+export const SubjP3 = styled.p`
   font-size: 25px;
   color: white;
   padding: 1rem;
 `;
 
 export const SubjectGroup = styled.div`
-  width: 905px;
-  height: 270px;
-  margin-top: 5rem;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+  width: 1005px;
+  height: 500px;
+  padding: 10rem;
+  background: yellow;
 `;
 
 export const ModelGroup = styled.div`
@@ -89,6 +96,17 @@ export const ModelGroup = styled.div`
   opacity: 0.95;
   box-shadow: 0px 12px 35px rgba(160, 121, 0, 0.2);
   border-radius: 10px;
+  margin: 2rem;
+`;
+
+export const ModelGroupTwo = styled.div`
+  width: 450px;
+  height: 330px;
+  background: #1bb8ae;
+  opacity: 0.95;
+  box-shadow: 0px 12px 35px rgba(160, 121, 0, 0.2);
+  border-radius: 10px;
+  margin: 2rem;
 `;
 
 export const SubjectStar = styled.img`
@@ -113,27 +131,4 @@ export const ChapBtn = styled.button`
   margin-left: 15rem;
   font-size: 15px;
   color: black;
-`;
-
-export const ChapAlign = styled.div`
-  display: flex;
-  justify-content: flex-end;
-  align-items: center;
-  align-content: center;
-`;
-
-export const ChapBtn1 = styled.div`
-  display: flex;
-  justify-content: flex-end;
-  align-items: center;
-  align-content: center;
-  width: 140px;
-  height: 46px;
-  padding: 0.5rem;
-  cursor: pointer;
-  mix-blend-mode: normal;
-  border: 1px solid rgba(0, 0, 0, 0.2);
-  border-radius: 31px;
-  color: #111;
-  font-size: 17px;
 `;

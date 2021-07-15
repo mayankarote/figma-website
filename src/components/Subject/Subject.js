@@ -6,6 +6,7 @@ import image from "../../assests/image.png";
 import {
   ChapBtn,
   ModelGroup,
+  ModelGroupTwo,
   ModelOne,
   ModelTwo,
   SubjectContainer,
@@ -90,19 +91,18 @@ export default function Subject() {
               </ChapBtn>
             </ModelGroup>
 
-            {/* <div className="grade__box2">
-              <p className="learn__math">Learn Math</p>
-              <p className="info__text1">
-                Playing with Numbers
-                <p>Number System,</p>
-                +7 more chapters
-              </p>
-              <p className="__chapters1">9 Chapters</p>
-              <button className="free__demo1 free_demotext" onClick={alertMsg}>
+            <ModelGroupTwo>
+              <SubjP>Learn Math</SubjP>
+              <SubjP2>
+                <p>Playing with Numbers </p>Number System,{" "}
+                <p>+7 more chapters</p>
+              </SubjP2>
+              <SubjP3>9 Chapters</SubjP3>
+              <ChapBtn onClick={onClickScience}>
+                <SubjectStar src={star} alt="" />
                 Free Demo
-              </button>
-              <img src={star} alt="" className="star1" />
-            </div> */}
+              </ChapBtn>
+            </ModelGroupTwo>
           </SubjectGroup>
         </SubjectItems>
       </SubjectContent>
