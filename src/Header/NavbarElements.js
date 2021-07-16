@@ -3,7 +3,7 @@ import { NavLink as Link } from "react-router-dom";
 
 export const Nav = styled.nav`
   background: white;
-  height: 80px;
+  height: 70px;
   display: flex;
 `;
 
@@ -22,10 +22,10 @@ export const NavLink = styled(Link)`
 `;
 
 export const Icon = styled.img`
-  width: 125px;
-  height: 125px;
+  width: 100px;
+  height: 100px;
   border-radius: 30px;
-  border: 11px solid white;
+  border: 10px solid white;
 `;
 
 export const NavItems = styled.div`
@@ -36,9 +36,9 @@ export const NavItems = styled.div`
   cursor: pointer;
   color: #111;
   padding: 1rem;
-  font-size: 20px;
+  font-size: 15px;
   p {
-    transform: translate(-105%, 10%);
+    transform: translate(-130%, -30%);
     font-weight: bold;
   }
 `;
@@ -51,9 +51,9 @@ export const NavItems2 = styled.div`
   cursor: pointer;
   color: #111;
   padding: 1rem;
-  font-size: 20px;
+  font-size: 15px;
   p {
-    transform: translate(-110%, 10%);
+    transform: translate(-160%, -30%);
     font-weight: bold;
     color: #ff8a00;
     cursor: pointer;
@@ -68,9 +68,9 @@ export const NavItems3 = styled.div`
   cursor: pointer;
   color: #111;
   padding: 1rem;
-  font-size: 20px;
+  font-size: 15px;
   p {
-    transform: translate(-10%, 10%);
+    transform: translate(-60%, -30%);
     font-weight: bold;
     color: #ff8a00;
     cursor: pointer;

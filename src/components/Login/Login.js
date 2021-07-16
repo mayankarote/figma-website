@@ -9,7 +9,7 @@ export default function Login() {
     <LoginContainer>
       <LoginItems>
         <StepAppLogo src={StepApp} alt="" />
-        {/* <Form /> */}
+        <Form />
       </LoginItems>
       <Footer />
     </LoginContainer>

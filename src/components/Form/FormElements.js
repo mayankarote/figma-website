@@ -7,27 +7,25 @@ export const LoginForm = styled.div`
   align-items: center;
   align-content: center;
   flex-wrap: wrap;
-  padding: 0 2rem;
-  height: 650px;
-  width: 700px;
+  padding: 2rem;
 `;
 
 export const FormInput = styled.div`
   color: #111;
   padding: 1rem 2rem;
-  width: 550px;
-  height: 75px;
+  width: 500px;
+  height: 70px;
   border: 1px solid rgba(0, 0, 0, 0.24);
   background: #ffffff;
   border-radius: 80px;
   color: black;
-  font-size: 20px;
+  font-size: 15px;
   margin: 2rem;
   outline: none;
 `;
 
 export const FormP = styled.p`
-  font-size: 20px;
+  font-size: 15px;
   color: white;
   text-align: right;
 `;
@@ -39,7 +37,7 @@ export const FormError = styled.p`
 `;
 
 export const HomeH1 = styled.h1`
-  font-size: 1.2rem;
+  font-size: 0.8rem;
   color: white;
 `;
 
@@ -47,9 +45,9 @@ export const LoginBtn = styled.button`
   background-color: #ffc000;
   color: #111;
   padding: 1rem 2rem;
-  width: 550px;
-  height: 75px;
+  width: 500px;
+  height: 70px;
   border-radius: 80px;
-  font-size: 25px;
+  font-size: 18px;
   margin: 2rem;
 `;

@@ -38,7 +38,7 @@ export default function Header1() {
         <p>Welcome, {statename.selectValue}</p>
       </NavItems>
       <NavItems2>
-        <p>Profile |</p>
+        <p>Profile | </p>
       </NavItems2>
       <NavItems3>
         <p onClick={logout}> Logout</p>
