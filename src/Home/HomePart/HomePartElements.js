@@ -15,32 +15,31 @@ export const HomeItemsTwo = styled.div`
   justify-content: center;
   align-content: center;
   align-items: center;
-  font-weight: bold;
   @media screen and (max-width: 650px) {
     width: 100%;
   }
 `;
 export const StepAppLogo = styled.img`
-  width: 300px;
-  height: 100px;
+  width: 280px;
+  height: 90px;
   margin: 0rem 1rem;
 `;
 
 export const HomeH1 = styled.h1`
-  font-size: 1.5rem;
+  font-size: 1.3rem;
   color: white;
-  margin: 2.5rem 1rem;
+  margin: 1.5rem 1rem;
 `;
 export const HomeSelect = styled.div`
-  padding: 1rem 2rem;
+  padding: 2rem 1rem;
 `;
 
 export const HomeBtn = styled.button`
   background-color: #ffc000;
   color: #111;
-  padding: 1rem 2rem;
-  width: 550px;
-  height: 75px;
+  padding: 0.5rem 1rem;
+  width: 500px;
+  height: 65px;
   border-radius: 80px;
   font-size: 25px;
 `;

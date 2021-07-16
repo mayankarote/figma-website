@@ -85,7 +85,7 @@ function Form() {
         <FormInput>
           <input
             type="text"
-            placeholder="Mobile No"
+            placeholder="Mobile Number"
             value={mobileNo}
             onChange={validationMobileno}
             minLength={10}
@@ -97,6 +97,7 @@ function Form() {
         <FormInput>
           <input
             type="password"
+            placeholder="Password"
             value={password.value}
             onChange={validatePassword}
             required

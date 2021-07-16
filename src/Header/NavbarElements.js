@@ -5,27 +5,44 @@ export const Nav = styled.nav`
   background: white;
   height: 70px;
   display: flex;
+  // justify-content: center;
 `;
 
-export const NavLink = styled(Link)`
-  color: #fff;
-  font-size: 2rem;
-  display: flex;
-  text-decoration: none;
-  cursor: pointer;
-  padding: 1rem;
-  @media screen and (max-width: 400px) {
+export const Bars = styled.img`
+  width: 80px;
+  height: 80px;
+  border-radius: 25px;
+  border: 9px solid white;
+  margin: 1rem;
+  @media screen and (max-width: 768px) {
+    display: block;
     position: absolute;
-    top: 10px;
-    left: 20px;
+    top: 0;
+    right: 0;
+    transform: translate(-175%, 10%);
+    cursor: pointer;
   }
 `;
 
-export const Icon = styled.img`
-  width: 100px;
-  height: 100px;
-  border-radius: 30px;
-  border: 10px solid white;
+export const NavMenu = styled.div`
+  display: flex;
+  align-items: center;
+  margin-right: -54px;
+  text-decoration: none;
+`;
+
+export const NavLink = styled(Link)`
+  color: #111;
+  display: flex;
+  align-items: flex-start;
+  text-decoration: none;
+  height: 100%;
+  cursor: pointer;
+  @media screen and (max-width: 650px) {
+    position: absolute;
+    top: 10px;
+    left: 25px;
+  }
 `;
 
 export const NavItems = styled.div`
@@ -35,10 +52,9 @@ export const NavItems = styled.div`
   right: 0px;
   cursor: pointer;
   color: #111;
-  padding: 1rem;
   font-size: 15px;
   p {
-    transform: translate(-130%, -30%);
+    transform: translate(-130%, 50%);
     font-weight: bold;
   }
 `;
@@ -50,10 +66,9 @@ export const NavItems2 = styled.div`
   right: 0px;
   cursor: pointer;
   color: #111;
-  padding: 1rem;
   font-size: 15px;
   p {
-    transform: translate(-160%, -30%);
+    transform: translate(-170%, 50%);
     font-weight: bold;
     color: #ff8a00;
     cursor: pointer;
@@ -67,10 +82,9 @@ export const NavItems3 = styled.div`
   right: 0px;
   cursor: pointer;
   color: #111;
-  padding: 1rem;
   font-size: 15px;
   p {
-    transform: translate(-60%, -30%);
+    transform: translate(-70%, 50%);
     font-weight: bold;
     color: #ff8a00;
     cursor: pointer;

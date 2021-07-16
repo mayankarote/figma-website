@@ -61,8 +61,8 @@ export default function Home() {
         <HomeSelect>
           <Select
             backgroundColor="white"
-            width="550px"
-            height="75px"
+            width="500px"
+            height="65px"
             borderRadius="50px"
             onChange={fetchDropdownValue}
             placeholder="Select Name"
