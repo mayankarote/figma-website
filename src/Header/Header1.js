@@ -3,11 +3,10 @@ import Logo from "./../assests/logo.jpg";
 import {
   Bars,
   Nav,
-  NavItems,
-  NavItems2,
-  NavItems3,
+  NavIcon,
+  NavIcon1,
+  NavIcon2,
   NavLink,
-  NavMenu,
 } from "./NavbarElements";
 
 export default function Header1() {
@@ -29,20 +28,19 @@ export default function Header1() {
 
   return (
     <Nav>
-      <NavLink to="./grade">
-        <Bars src={Logo} />
+      <NavLink to="grade">
+        <Bars src={Logo}></Bars>
       </NavLink>
-      <NavMenu>
-        <NavItems>
-          <p>Welcome, {statename.selectValue}</p>
-        </NavItems>
-        <NavItems2>
-          <p>Profile |</p>
-        </NavItems2>
-        <NavItems3>
-          <p onClick={logout}> Logout</p>
-        </NavItems3>
-      </NavMenu>
+      <NavIcon1>
+        <p>Profile |</p>
+        <NavIcon2>
+          <p onClick={logout}>Logout</p>
+        </NavIcon2>
+      </NavIcon1>
+
+      <NavIcon>
+        <p>Welcome, {statename.selectValue}</p>
+      </NavIcon>
     </Nav>
   );
 }

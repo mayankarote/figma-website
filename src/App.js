@@ -8,15 +8,15 @@ import Subject from "./components/Subject/Subject";
 import Chapters from "./components/Chapters/Chapters";
 import ChapIntro from "./components/ChapIntro/ChapIntro";
 import Chapdetail from "./components/Chapdetail/Chapdetail";
-import Footer from "./components/Footer";
 import Game from "./components/Game/Game";
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 import { ChakraProvider } from "@chakra-ui/react";
 import "bootstrap/dist/css/bootstrap.min.css";
 import { GlobalStyle } from "./globalStyles";
+import Navbar from "./components/Navbar";
+
 function App() {
   return (
-    //BEM
     <React.Fragment>
       <ChakraProvider>
         <Router>
@@ -62,7 +62,6 @@ function App() {
               <Home />
             </Route>
           </Switch>
-          {/* <Footer /> */}
         </Router>
       </ChakraProvider>
     </React.Fragment>

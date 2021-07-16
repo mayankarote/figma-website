@@ -5,8 +5,8 @@ import { Bars, Nav, NavLink } from "./NavbarElements";
 export default function Header() {
   return (
     <Nav>
-      <NavLink to="./grade">
-        <Bars src={Logo} />
+      <NavLink to="grade">
+        <Bars src={Logo}></Bars>
       </NavLink>
     </Nav>
   );
