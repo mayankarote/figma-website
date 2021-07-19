@@ -1,5 +1,21 @@
-import React from "react";
+import React, { useState, useEffect } from "react";
 import IsolatedSvg from "./../assests/Isolated Image Icon.svg";
+import axios from "axios";
+import config from "./../config.json";
+import userPic from "./../assests/User-Pic.png";
+import quote from "./../assests/quote.png";
+import {
+  HomeItemsfour,
+  CardImg,
+  CardInfo,
+  CardHeading,
+  CardTitle,
+  WhiteFourCard,
+  CardUserPicImg,
+  CardsubTitle,
+  WhiteFourCardHighlight,
+} from "./HomeElements";
+
 import {
   HomeContainer,
   HomeContentOne,
@@ -10,37 +26,48 @@ import {
   NavIcon,
 } from "./HomeElements";
 import Header from "../Header/Header";
-import HomePart from "./HomePart/HomePart";
-import HomePartColorLine from "./HomePartColorLine/HomePart0";
 import HomePart1 from "./HomePart1/HomePart1";
-import HomePart2 from "./HomePart2/HomePart2";
+import HomePart from "./HomePart/HomePart";
 import HomePart3 from "./HomePart3/HomePart3";
+import HomeCard from "./HomeCard";
 
 export default function Home() {
+  const [states, setState] = useState([]);
+  const [error, setError] = useState();
+
+  useEffect(
+    () => {
+      axios
+        .get(config.schoolapi)
+        .then((response) => {
+          setState(response.data.data);
+        })
+        .catch((error) => {
+          setError(alert("No data available, please try later"));
+        });
+    },
+    [],
+    [error]
+  );
+
   return (
     <HomeContainer>
       <Header />
       <HomeContentOne>
         <HomeItems>
           <HomeP>
-            <p>
-              Students From Class 5th To 11th, Here is Your Dream Opportunity!
-            </p>
+            Students From Class 5th To 11th, Here is Your Dream Opportunity!
           </HomeP>
-          <HomeP2>
-            <p>Play, Learn & Build Your Own Future</p>
-          </HomeP2>
+          <HomeP2>Play, Learn & Build Your Own Future</HomeP2>
+          <NavIcon>
+            <SVGIcon src={IsolatedSvg} alt="" />
+          </NavIcon>
         </HomeItems>
-        <NavIcon>
-          <SVGIcon src={IsolatedSvg} alt="" />
-        </NavIcon>
       </HomeContentOne>
 
       <HomePart />
       <HomePart1 />
-      <HomePartColorLine />
-      <HomePart2 />
-      <HomePart3 />
+      {/* <HomePart3 /> */}
     </HomeContainer>
   );
 }

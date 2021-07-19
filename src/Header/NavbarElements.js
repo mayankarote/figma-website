@@ -59,5 +59,5 @@ export const Bars = styled.img`
   height: 90px;
   border-radius: 25px;
   border: 9px solid white;
-  transform: translate(20%, 40%);
+  transform: translate(20%, 25%);
 `;

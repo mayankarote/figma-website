@@ -1,6 +1,6 @@
 import styled from "styled-components";
 
-export const HomeContainer = styled.div`
+export const HomeContainerTwo = styled.div`
   padding: 0rem calc((100vw - 1300px) / 2);
   max-height: 100vh;
   background: #0c2657;
@@ -12,7 +12,7 @@ export const HomeItemsTwo = styled.div`
   flex-direction: column;
   flex-wrap: wrap;
   height: 600px;
-  justify-content: center;
+  justify-content: flex-start;
   align-content: center;
   align-items: center;
   @media screen and (max-width: 650px) {
@@ -20,18 +20,32 @@ export const HomeItemsTwo = styled.div`
   }
 `;
 export const StepAppLogo = styled.img`
-  width: 280px;
+  width: 250px;
   height: 90px;
-  margin: 0rem 1rem;
+  margin: 2rem;
 `;
 
 export const HomeH1 = styled.h1`
   font-size: 1.3rem;
   color: white;
-  margin: 1.5rem 1rem;
+  margin-bottom: 2rem;
 `;
-export const HomeSelect = styled.div`
-  padding: 2rem 1rem;
+
+export const HomeSelect = styled("Select")`
+  width: 500px;
+  height: 65px;
+  border-radius: 50px;
+  margin-bottom: 2rem;
+  color: #111;
+  padding: 1rem;
+  @media screen and (max-width: 650px) {
+    width: 250px;
+    height: 65px;
+    margin-bottom: 2rem;
+    margin-left: 2rem;
+    margin-right: 2rem;
+    color: #111;
+  }
 `;
 
 export const HomeBtn = styled.button`
@@ -40,6 +54,10 @@ export const HomeBtn = styled.button`
   padding: 0.5rem 1rem;
   width: 500px;
   height: 65px;
-  border-radius: 80px;
+  border-radius: 50px;
   font-size: 25px;
+  @media screen and (max-width: 650px) {
+    width: 250px;
+    height: 65px;
+  }
 `;

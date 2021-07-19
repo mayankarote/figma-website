@@ -1,5 +1,10 @@
 import styled from "styled-components";
 
+export const HomeContentContanerThree = styled.div`
+  background: white;
+  // padding: 0rem calc((100vw - 1300px) / 2);
+  max-height: 100vh;
+`;
 export const HomeContentThree = styled.div`
   background: white;
   padding: 0rem calc((100vw - 1300px) / 2);
@@ -48,12 +53,27 @@ export const ProductTitle = styled.p`
   text-align: center;
 `;
 
-export const Card = styled.div`
-  padding: 1rem;
+// colorLine
+
+export const HomeItemsColorLine = styled.div`
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0 auto;
+  justify-content: center;
+  @media screen and (max-width: 650px) {
+    width: 100%;
+    margin-top: 1rem;
+  }
 `;
 
+export const HomeLineDiv = styled.div`
+  margin: 0rem 5rem;
+`;
 export const HomeLine = styled.img`
   margin: 1.5rem;
+`;
+export const Info = styled.div`
+  margin: 1rem 1rem;
 `;
 
 export const WhatStdsSayHeading = styled.h1`

@@ -5,7 +5,7 @@ import { Select } from "@chakra-ui/react";
 import { useHistory } from "react-router-dom";
 import config from "../../config.json";
 import {
-  HomeContainer,
+  HomeContainerTwo,
   HomeItemsTwo,
   StepAppLogo,
   HomeH1,
@@ -54,26 +54,17 @@ export default function Home() {
     }
   };
   return (
-    <HomeContainer>
+    <HomeContainerTwo>
       <HomeItemsTwo>
         <StepAppLogo src={StepApp} alt="" />
         <HomeH1>Select School</HomeH1>
-        <HomeSelect>
-          <Select
-            backgroundColor="white"
-            width="500px"
-            height="65px"
-            borderRadius="50px"
-            onChange={fetchDropdownValue}
-            placeholder="Select Name"
-          >
-            {states.map((state) => (
-              <option value={state.value}>{state.first_name}</option>
-            ))}
-          </Select>
+        <HomeSelect onChange={fetchDropdownValue} placeholder="Select Name">
+          {states.map((state) => (
+            <option value={state.value}>{state.first_name}</option>
+          ))}
         </HomeSelect>
         <HomeBtn onClick={proceed}>Proceed</HomeBtn>
       </HomeItemsTwo>
-    </HomeContainer>
+    </HomeContainerTwo>
   );
 }
