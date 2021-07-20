@@ -1,6 +1,11 @@
 import React from "react";
 import userPic from "../../assests/User-Pic.png";
 import quote from "../../assests/quote.png";
+import a from "../../assests/a.png";
+import b from "../../assests/b.png";
+import c from "../../assests/c.png";
+import d from "../../assests/d.png";
+
 import {
   HomeContainer,
   HomeContentThree,
@@ -14,7 +19,16 @@ import {
   CardsubTitle,
   WhiteFourCardHighlight,
 } from "./HomeCardElements";
-import HomePart3 from "../HomePart3/HomePart3";
+
+import {
+  HomeYellowContentFour,
+  HomeYellowItemsfour,
+  YellowCardImg,
+  YellowCardInfo,
+  YellowCardHeading,
+  YellowCardTitle,
+} from "./HomeCardElements";
+import Footer from "../../components/Footer";
 
 function HomeCard() {
   return (
@@ -86,7 +100,43 @@ function HomeCard() {
               </CardInfo>
             </WhiteFourCard>
           </HomeItemsfour>
-          <HomePart3 />
+          {/* -------------------------------------------------------- */}
+
+          <HomeYellowContentFour>
+            <HomeYellowItemsfour>
+              <YellowCardInfo>
+                <YellowCardImg src={d} alt="" />
+                <YellowCardHeading>5,679</YellowCardHeading>
+                <YellowCardTitle>Registered Students</YellowCardTitle>
+              </YellowCardInfo>
+
+              <YellowCardInfo>
+                <YellowCardImg src={c} alt="" />
+                <YellowCardHeading>2,679</YellowCardHeading>
+                <YellowCardTitle>
+                  Student has been helped to achieve their dreams
+                </YellowCardTitle>
+              </YellowCardInfo>
+
+              <YellowCardInfo>
+                <YellowCardImg src={b} alt="" />
+                <YellowCardHeading>10,000</YellowCardHeading>
+                <YellowCardTitle>
+                  More than 10,000 people visits our site monthly
+                </YellowCardTitle>
+              </YellowCardInfo>
+
+              <YellowCardInfo>
+                <YellowCardImg src={a} alt="" />
+                <YellowCardHeading>$10</YellowCardHeading>
+                <YellowCardTitle>
+                  Ranked among the top 10 growing online learning startups in
+                  West Africa
+                </YellowCardTitle>
+              </YellowCardInfo>
+            </HomeYellowItemsfour>
+            <Footer />
+          </HomeYellowContentFour>
         </HomeContentThree>
       </HomeContainer>
     </div>

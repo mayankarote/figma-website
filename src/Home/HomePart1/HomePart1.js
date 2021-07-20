@@ -21,7 +21,6 @@ import {
   WhatStdsSayTitle,
 } from "./HomePart1Elements";
 import HomeCard from "../HomeCard/HomeCard";
-import HomePart3 from "../HomePart3/HomePart3";
 
 export default function HomePart1() {
   return (
@@ -80,7 +79,6 @@ export default function HomePart1() {
             </WhatStdsSayTitle>
           </Info>
         </HomeItemsThree>
-        {/* ---------------------------------------- */}
         <HomeCard />
       </HomeContentThree>
     </HomeContainerThree>

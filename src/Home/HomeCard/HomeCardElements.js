@@ -66,3 +66,45 @@ export const CardTitle = styled.p`
   color: #5c5c5c;
   text-align: justify;
 `;
+
+// -----------------------------------------------------------------
+
+export const HomeYellowContentFour = styled.div`
+  max-height: 100vh;
+`;
+
+export const HomeYellowItemsfour = styled.div`
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+  background: #ff9201;
+  margin-top: 2rem;
+
+  // transform: matrix(1, 0, 0, 1, 1, -1);
+`;
+
+export const YellowCardImg = styled.img`
+  width: 100px;
+  height: 100px;
+  margin: 0rem 1.8rem;
+`;
+
+export const YellowCardInfo = styled.div`
+  margin: 1rem 4rem;
+`;
+
+export const YellowCardHeading = styled.p`
+  font-size: 35px;
+  font-weight: 600;
+  text-align: center;
+`;
+
+export const YellowCardTitle = styled.p`
+  width: 200px;
+  font-size: 10px;
+  line-height: 24px;
+  color: #5c5c5c;
+  text-align: center;
+`;
