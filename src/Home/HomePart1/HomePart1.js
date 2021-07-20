@@ -80,8 +80,8 @@ export default function HomePart1() {
             </WhatStdsSayTitle>
           </Info>
         </HomeItemsThree>
+        {/* ---------------------------------------- */}
         <HomeCard />
-        <HomePart3 />
       </HomeContentThree>
     </HomeContainerThree>
   );

@@ -12,7 +12,9 @@ export const HomeItemsfour = styled.div`
   align-items: center;
   align-content: center;
   background: #ff9201;
-  transform: matrix(1, 0, 0, 1, 1, -1);
+  margin-top: 2rem;
+
+  // transform: matrix(1, 0, 0, 1, 1, -1);
 `;
 
 export const CardImg = styled.img`

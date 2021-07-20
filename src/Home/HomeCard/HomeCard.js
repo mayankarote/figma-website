@@ -14,6 +14,7 @@ import {
   CardsubTitle,
   WhiteFourCardHighlight,
 } from "./HomeCardElements";
+import HomePart3 from "../HomePart3/HomePart3";
 
 function HomeCard() {
   return (
@@ -85,6 +86,7 @@ function HomeCard() {
               </CardInfo>
             </WhiteFourCard>
           </HomeItemsfour>
+          <HomePart3 />
         </HomeContentThree>
       </HomeContainer>
     </div>
