@@ -13,4 +13,7 @@ export const FooterWrap = styled.div`
   padding: 5px 2px;
   max-width: 1300px;
   margin: 0rem auto;
+  @media screen and (max-width: 400px) {
+    font-size: 13px;
+  }
 `;

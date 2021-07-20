@@ -8,6 +8,9 @@ export const Nav = styled.nav`
   display: flex;
   font-weight: bold;
   font-size: 1rem;
+  @media screen and (max-width: 400px) {
+    font-size: 15px;
+  }
 `;
 
 export const NavLink = styled(Link)`
@@ -60,4 +63,10 @@ export const Bars = styled.img`
   border-radius: 25px;
   border: 9px solid white;
   transform: translate(20%, 25%);
+  @media screen and (max-width: 400px) {
+    width: 80px;
+    height: 80px;
+    border-radius: 22px;
+    border: 9px solid white;
+  }
 `;

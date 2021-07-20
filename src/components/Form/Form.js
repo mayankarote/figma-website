@@ -1,5 +1,4 @@
 import React, { useState, useEffect } from "react";
-import "./Form.css";
 import { Link, useHistory } from "react-router-dom";
 import { toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
@@ -80,7 +79,6 @@ function Form() {
 
   return (
     <LoginForm>
-      <HomeH1>Sign in to your account to continue</HomeH1>
       <form onSubmit={onSubmit}>
         <FormInput>
           <input

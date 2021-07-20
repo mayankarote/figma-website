@@ -1,13 +1,15 @@
 import styled from "styled-components";
 
 export const LoginForm = styled.div`
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  align-content: center;
-  flex-wrap: wrap;
-  padding: 2rem;
+  @media screen and (max-width: 650px) {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    flex-wrap: wrap;
+  }
 `;
 
 export const FormInput = styled.div`
@@ -22,23 +24,27 @@ export const FormInput = styled.div`
   font-size: 15px;
   margin: 2rem;
   outline: none;
+  @media screen and (max-width: 650px) {
+    width: 100%;
+    width: 300px;
+    height: 65px;
+  }
 `;
 
 export const FormP = styled.p`
   font-size: 15px;
   color: white;
   text-align: right;
+  @media screen and (max-width: 650px) {
+    margin: 1rem;
+    font-size: 13px;
+  }
 `;
 
 export const FormError = styled.p`
   font-size: 15px;
   color: red;
   text-align: right;
-`;
-
-export const HomeH1 = styled.h1`
-  font-size: 0.8rem;
-  color: white;
 `;
 
 export const LoginBtn = styled.button`
@@ -50,4 +56,9 @@ export const LoginBtn = styled.button`
   border-radius: 80px;
   font-size: 18px;
   margin: 2rem;
+  @media screen and (max-width: 650px) {
+    width: 100%;
+    width: 300px;
+    height: 65px;
+  }
 `;

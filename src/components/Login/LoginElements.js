@@ -20,5 +20,15 @@ export const LoginItems = styled.div`
 
 export const StepAppLogo = styled.img`
   width: 230px;
-  height: 60px;
+  height: 75px;
+  margin: 1rem;
+  @media screen and (max-width: 650px) {
+    width: 200px;
+    height: 60px;
+  }
+`;
+
+export const HomeH1 = styled.h1`
+  font-size: 0.8rem;
+  color: white;
 `;
