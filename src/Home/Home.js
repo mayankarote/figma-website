@@ -2,19 +2,6 @@ import React, { useState, useEffect } from "react";
 import IsolatedSvg from "./../assests/Isolated Image Icon.svg";
 import axios from "axios";
 import config from "./../config.json";
-import userPic from "./../assests/User-Pic.png";
-import quote from "./../assests/quote.png";
-import {
-  HomeItemsfour,
-  CardImg,
-  CardInfo,
-  CardHeading,
-  CardTitle,
-  WhiteFourCard,
-  CardUserPicImg,
-  CardsubTitle,
-  WhiteFourCardHighlight,
-} from "./HomeElements";
 
 import {
   HomeContainer,
@@ -29,7 +16,7 @@ import Header from "../Header/Header";
 import HomePart1 from "./HomePart1/HomePart1";
 import HomePart from "./HomePart/HomePart";
 import HomePart3 from "./HomePart3/HomePart3";
-import HomeCard from "./HomeCard";
+import HomeCard from "./HomeCard/HomeCard";
 
 export default function Home() {
   const [states, setState] = useState([]);
@@ -51,23 +38,26 @@ export default function Home() {
   );
 
   return (
-    <HomeContainer>
-      <Header />
-      <HomeContentOne>
-        <HomeItems>
-          <HomeP>
-            Students From Class 5th To 11th, Here is Your Dream Opportunity!
-          </HomeP>
-          <HomeP2>Play, Learn & Build Your Own Future</HomeP2>
-          <NavIcon>
-            <SVGIcon src={IsolatedSvg} alt="" />
-          </NavIcon>
-        </HomeItems>
-      </HomeContentOne>
+    <>
+      <HomeContainer>
+        <Header />
+        <HomeContentOne>
+          <HomeItems>
+            <HomeP>
+              Students From Class 5th To 11th, Here is Your Dream Opportunity!
+            </HomeP>
+            <HomeP2>Play, Learn & Build Your Own Future</HomeP2>
+            <NavIcon>
+              <SVGIcon src={IsolatedSvg} alt="" />
+            </NavIcon>
+          </HomeItems>
+        </HomeContentOne>
 
-      <HomePart />
-      <HomePart1 />
-      {/* <HomePart3 /> */}
-    </HomeContainer>
+        <HomePart />
+        <HomePart1 />
+        {/* <HomeCard /> */}
+        {/* <HomePart3 /> */}
+      </HomeContainer>
+    </>
   );
 }

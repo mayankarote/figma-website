@@ -11,7 +11,7 @@ export const HomeItemsTwo = styled.div`
   display: flex;
   flex-direction: column;
   flex-wrap: wrap;
-  height: 600px;
+  height: 500px;
   justify-content: flex-start;
   align-content: center;
   align-items: center;

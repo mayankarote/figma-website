@@ -16,7 +16,7 @@ export const HomeItemsfour = styled.div`
 `;
 
 export const CardImg = styled.img`
-  width: 110px;
+  width: 100px;
   height: 100px;
   margin: 0rem 1.8rem;
 `;

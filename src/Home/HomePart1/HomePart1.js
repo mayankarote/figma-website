@@ -14,14 +14,12 @@ import {
   ProductInfo,
   ProductCard,
   ProductTitle,
-  HomeItemsColorLine,
   Info,
   HomeLine,
   WhatStdsSayHeading,
   HomeLineDiv,
   WhatStdsSayTitle,
 } from "./HomePart1Elements";
-import HomeCard from "../HomeCard";
 
 export default function HomePart1() {
   return (
@@ -67,13 +65,10 @@ export default function HomePart1() {
               </ProductTitle>
             </ProductInfo>
           </ProductCard>
-        </HomeItemsThree>
-
-        <HomeItemsColorLine>
+          {/* ----------------------------------------------------- */}
           <HomeLineDiv>
             <HomeLine src={colorLine} alt="" />
           </HomeLineDiv>
-
           <Info>
             <WhatStdsSayHeading>What Students Say</WhatStdsSayHeading>
             <WhatStdsSayTitle>
@@ -82,9 +77,8 @@ export default function HomePart1() {
               Media Specialist,.
             </WhatStdsSayTitle>
           </Info>
-        </HomeItemsColorLine>
+        </HomeItemsThree>
       </HomeContentThree>
-      <HomeCard />
     </HomeContentContanerThree>
   );
 }

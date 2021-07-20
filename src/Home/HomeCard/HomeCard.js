@@ -1,9 +1,8 @@
 import React from "react";
-import userPic from "./../assests/User-Pic.png";
-import quote from "./../assests/quote.png";
+import userPic from "../../assests/User-Pic.png";
+import quote from "../../assests/quote.png";
 import {
   HomeContainer,
-  HomeContentFour,
   HomeItemsfour,
   CardImg,
   CardInfo,
@@ -13,12 +12,12 @@ import {
   CardUserPicImg,
   CardsubTitle,
   WhiteFourCardHighlight,
-} from "./HomeElements";
+} from "./HomeCardElements";
 
-export default function HomeCard() {
+function HomeCard() {
   return (
-    <HomeContainer>
-      <HomeContentFour>
+    <div>
+      <HomeContainer>
         <HomeItemsfour>
           {/* 1st card */}
           <WhiteFourCard>
@@ -84,9 +83,9 @@ export default function HomeCard() {
             </CardInfo>
           </WhiteFourCard>
         </HomeItemsfour>
-      </HomeContentFour>
-      {/* <HomePart2 /> */}
-      {/* <HomePart3 /> */}
-    </HomeContainer>
+      </HomeContainer>
+    </div>
   );
 }
+
+export default HomeCard;
