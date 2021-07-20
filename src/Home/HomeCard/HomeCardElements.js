@@ -2,7 +2,14 @@ import styled from "styled-components";
 
 export const HomeContainer = styled.div`
   min-height: 100vh;
-  padding: 5rem calc((100vw - 1800px) / 2);
+  max-height: 100%;
+  height: calc(100px + 640px);
+`;
+export const HomeContentThree = styled.div`
+  background: white;
+  margin: 0 auto;
+  // padding: 0rem calc((100vw - 1300px) / 2);
+  max-height: 100vh;
 `;
 
 export const HomeItemsfour = styled.div`
@@ -10,6 +17,11 @@ export const HomeItemsfour = styled.div`
   flex-wrap: wrap;
   justify-content: center;
   margin: 0 auto;
+  @media screen and (max-width: 650px) {
+    max-width: 100%;
+    height: 100%;
+    margin-top: 5rem;
+  }
 `;
 
 export const WhiteFourCard = styled.div`

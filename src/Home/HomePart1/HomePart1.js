@@ -5,7 +5,7 @@ import three from "../../assests/three.png";
 import colorLine from "../../assests/colorLine.png";
 
 import {
-  HomeContentContanerThree,
+  HomeContainerThree,
   HomeContentThree,
   HomeItemsThree,
   ProductImg,
@@ -20,10 +20,12 @@ import {
   HomeLineDiv,
   WhatStdsSayTitle,
 } from "./HomePart1Elements";
+import HomeCard from "../HomeCard/HomeCard";
+import HomePart3 from "../HomePart3/HomePart3";
 
 export default function HomePart1() {
   return (
-    <HomeContentContanerThree>
+    <HomeContainerThree>
       <HomeContentThree>
         <HomeItemsThree>
           {/* first vector */}
@@ -78,7 +80,9 @@ export default function HomePart1() {
             </WhatStdsSayTitle>
           </Info>
         </HomeItemsThree>
+        <HomeCard />
+        <HomePart3 />
       </HomeContentThree>
-    </HomeContentContanerThree>
+    </HomeContainerThree>
   );
 }

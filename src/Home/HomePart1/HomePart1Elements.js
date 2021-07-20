@@ -1,18 +1,13 @@
 import styled from "styled-components";
 
-export const HomeContainer = styled.div`
-  height: 100vh;
-`;
-
-export const HomeContentContanerThree = styled.div`
-  background: white;
+export const HomeContainerThree = styled.div`
   max-height: 100vh;
   max-height: 100%;
-  height: calc(100px + 240px);
+  height: calc(100px + 640px);
+  background: white;
 `;
 export const HomeContentThree = styled.div`
-  background: pink;
-  padding: 0rem calc((100vw - 1300px) / 2);
+  background: white;
   max-height: 100vh;
 `;
 
@@ -21,9 +16,13 @@ export const HomeItemsThree = styled.div`
   flex-wrap: wrap;
   margin: 0 auto;
   justify-content: center;
+  padding: 0rem calc((100vw - 1300px) / 2);
   @media screen and (max-width: 650px) {
     max-width: 100%;
     height: 100%;
+    height: calc(100vw + 1040px);
+    background: white;
+    margin: 2rem;
   }
 `;
 
@@ -91,8 +90,10 @@ export const WhatStdsSayTitle = styled.p`
   line-height: 2rem;
   text-align: center;
   color: #5c5c5c;
+  margin: 1rem;
   @media screen and (max-width: 650px) {
     font-size: 1rem;
     line-height: 1.7rem;
+    margin: 1rem;
   }
 `;

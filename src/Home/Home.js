@@ -15,8 +15,6 @@ import {
 import Header from "../Header/Header";
 import HomePart1 from "./HomePart1/HomePart1";
 import HomePart from "./HomePart/HomePart";
-import HomePart3 from "./HomePart3/HomePart3";
-import HomeCard from "./HomeCard/HomeCard";
 
 export default function Home() {
   const [states, setState] = useState([]);
@@ -55,8 +53,6 @@ export default function Home() {
 
         <HomePart />
         <HomePart1 />
-        {/* <HomeCard /> */}
-        {/* <HomePart3 /> */}
       </HomeContainer>
     </>
   );
